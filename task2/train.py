@@ -6,8 +6,7 @@ import numpy as np
 import torch
 
 from common.log import fmt_metrics, line, progress
-from common.paths import ckpt_root
-from common.utils import Jsonl, Timer, get_device, load_json, path_size, peak_mem_gb, reset_peak, save_json, seed_all
+from common.utils import Jsonl, Timer, free_cuda, get_device, load_json, path_size, peak_mem_gb, reset_peak, save_json, seed_all
 from task2.config import OUT, SEED, STAGES
 from task2.data import load_splits
 from task2.dataset import MixSampler
@@ -87,7 +86,7 @@ def train(cfg, log, resume=False):
     device = get_device()
     run = OUT / f"run_{cfg.tokens}"
     run.mkdir(parents=True, exist_ok=True)
-    ck_dir = ckpt_root() / f"task2_{cfg.tokens}"
+    ck_dir = run / "recovery"
     ck_dir.mkdir(parents=True, exist_ok=True)
     seed_all(SEED)
     splits = load_splits(cfg, log)
@@ -99,7 +98,12 @@ def train(cfg, log, resume=False):
     scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
 
     boundaries = np.cumsum([0, *cfg.stage_updates])
-    calib = calibrate(model, store, splits, cfg) if not (resume and (ck_dir / "last.pt").exists()) else None
+    calib_path = run / "calibration.json"
+    if resume and calib_path.exists():
+        calib = load_json(calib_path)
+        model.scale.fill_(calib["scale"])
+    else:
+        calib = calibrate(model, store, splits, cfg)
     log.info("calibration: %s", calib)
     sanity = model.sanity(store.get([e for e in list(index)[:2]]))
     start_global, state = 0, None
@@ -118,6 +122,15 @@ def train(cfg, log, resume=False):
         set_rng_state(state["rng"])
         scaler.load_state_dict(state["scaler"])
 
+    finished = [k for k in range(len(STAGES)) if resume and (run / f"weights_stage{k + 1}.pt").exists()]
+    if finished and int(boundaries[finished[-1] + 1]) > start_global:
+        k = finished[-1]
+        if k >= 1 and not model.lora_on:
+            model.enable_lora()
+        load_trainable(model, torch.load(run / f"weights_stage{k + 1}.pt", map_location="cpu"))
+        start_global, state, state_stage = int(boundaries[k + 1]), None, None
+        log.info("resuming from finished stage %d weights at update %d", k + 1, start_global)
+
     dev_log = Jsonl(run / "dev_metrics.jsonl", "a" if start_global else "w")
     train_log = Jsonl(run / "train_log.jsonl", "a" if start_global else "w")
     resources = {"stages": {}}
@@ -130,6 +143,7 @@ def train(cfg, log, resume=False):
     bar = progress(total, f"vlm{cfg.tokens}", initial=start_global, unit="upd")
     ck_timer = Timer()
     last_dev = {}
+    micro = cfg.micro
     for si, stage in enumerate(STAGES):
         lo, hi = int(boundaries[si]), int(boundaries[si + 1])
         if start_global >= hi:
@@ -154,16 +168,26 @@ def train(cfg, log, resume=False):
         for u in range(done_in_stage, stage_updates):
             t0 = time.perf_counter()
             examples, counts = sampler.batch(stage, cfg.batch)
-            loss_val = 0.0
-            for m in range(0, cfg.batch, cfg.micro):
-                chunk = examples[m : m + cfg.micro]
-                feats_b = store.get([e.image for e in chunk])
-                tg = [model.target_ids(e.target, e.kind if e.kind == "caption" else "short") for e in chunk]
-                with torch.autocast("cuda", dtype=torch.float16, enabled=use_amp):
-                    per_ex = model.example_loss(feats_b, [e.question for e in chunk], tg)
-                loss = per_ex.sum() / cfg.batch
-                scaler.scale(loss).backward()
-                loss_val += loss.item()
+            while True:
+                loss_val = 0.0
+                try:
+                    for m in range(0, cfg.batch, micro):
+                        chunk = examples[m : m + micro]
+                        feats_b = store.get([e.image for e in chunk])
+                        tg = [model.target_ids(e.target, e.kind if e.kind == "caption" else "short") for e in chunk]
+                        with torch.autocast("cuda", dtype=torch.float16, enabled=use_amp):
+                            per_ex = model.example_loss(feats_b, [e.question for e in chunk], tg)
+                        loss = per_ex.sum() / cfg.batch
+                        scaler.scale(loss).backward()
+                        loss_val += loss.item()
+                    break
+                except torch.OutOfMemoryError:
+                    opt.zero_grad(set_to_none=True)
+                    free_cuda()
+                    if micro <= 1:
+                        raise
+                    micro = max(1, micro // 2)
+                    log.warning("OOM at update %d, micro-batch now %d", lo + u + 1, micro)
             scaler.unscale_(opt)
             params = [p for g in opt.param_groups for p in g["params"]]
             if u == 0 and si == 0 and start_global == 0:

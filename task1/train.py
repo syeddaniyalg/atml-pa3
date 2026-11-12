@@ -127,8 +127,14 @@ def trainable_state(model):
     return {n: p.detach().cpu() for n, p in model.named_parameters() if p.requires_grad}
 
 
+def _recovery_dir(method):
+    if METHODS[method]["kind"] == "full":
+        return ckpt_root() / method
+    return OUT / "runs" / method / "recovery"
+
+
 def save_recovery(method, step, model, spec, opt, sched, scaler, cfg):
-    directory = ckpt_root() / method
+    directory = _recovery_dir(method)
     directory.mkdir(parents=True, exist_ok=True)
     state = {
         "step": step,
@@ -147,7 +153,7 @@ def save_recovery(method, step, model, spec, opt, sched, scaler, cfg):
 
 
 def latest_recovery(method):
-    directory = ckpt_root() / method
+    directory = _recovery_dir(method)
     files = sorted(directory.glob("u*.pt"), key=lambda p: int(p.stem[1:])) if directory.exists() else []
     return files[-1] if files else None
 
@@ -274,7 +280,7 @@ def train(method, cfg, log, resume=False):
                     torch.save(down_proj_delta(model, ref, names, cfg.diag_layers), run_dir / "delta_down_proj_mid.pt")
                     if method == "fullft":
                         half = {k: v.detach().half().cpu() for k, v in model.state_dict().items()}
-                        torch.save(half, ckpt_root() / "fullft_mid_fp16.pt")
+                        torch.save(half, run_dir / "model_mid_fp16.pt")
                         del half
                 path = save_recovery(method, done, model, spec, opt, sched, scaler, cfg)
                 recovery_bytes = path_size(path)

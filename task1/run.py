@@ -61,11 +61,15 @@ def run_method(method, cfg, resume, log):
         model.eval()
         model.gradient_checkpointing_disable()
         if method == "fullft":
-            mid = load_eval_model_from_state(cfg, ckpt_root() / "fullft_mid_fp16.pt", device)
+            mid_path = OUT / "runs" / "fullft" / "model_mid_fp16.pt"
+            if not mid_path.exists():
+                mid_path = ckpt_root() / "fullft_mid_fp16.pt"
+            mid = load_eval_model_from_state(cfg, mid_path, device)
             evaluate_condition(mid, tok, cfg, "fullft_mid", log)
             del mid
             free_cuda()
         model = model.half()
+        torch.save({k: v.detach().cpu() for k, v in model.state_dict().items()}, OUT / "runs" / method / "model_final_fp16.pt")
         final = model
     else:
         final, extra = export_adapter(method, model, cfg, tok, device, log)

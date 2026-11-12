@@ -44,7 +44,7 @@ class Cfg:
     probe_n: int = 32
     eval_limit: int = 0
     gsm_bs: int = 48
-    ll_bs: int = 32
+    ll_bs: int = 8
     gsm_max_new: int = 1024
     qual_max_new: int = 512
     qual_bs: int = 8

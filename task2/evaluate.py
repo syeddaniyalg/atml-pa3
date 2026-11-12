@@ -4,7 +4,7 @@ import numpy as np
 import torch
 
 from common.log import progress
-from common.utils import Jsonl
+from common.utils import Jsonl, load_json, run_batched, save_json
 from task2.dataset import build_eval_items, caption_examples
 from task2.vqa_norm import exact_match, normalize, soft_accuracy
 
@@ -40,26 +40,29 @@ def condition_keys(items, condition):
 
 @torch.no_grad()
 def answer_nll(model, store, items, condition, bs=16):
-    out = []
     keys = condition_keys(items, condition)
-    for s in range(0, len(items), bs):
-        chunk = items[s : s + bs]
-        feats = store.get(keys[s : s + bs]) if keys is not None else None
+
+    def step(s, e):
+        chunk = items[s:e]
+        feats = store.get(keys[s:e]) if keys is not None else None
         targets = [model.target_ids(i["target"], "short") for i in chunk]
         with torch.autocast("cuda", dtype=torch.float16, enabled=model.device.type == "cuda"):
-            out += model.example_loss(feats, [i["question"] for i in chunk], targets, drop_end=True).float().cpu().tolist()
-    return out
+            return model.example_loss(feats, [i["question"] for i in chunk], targets, drop_end=True).float().cpu().tolist()
+
+    return run_batched(step, len(items), bs, label="answer_nll")
 
 
 @torch.no_grad()
 def generate_all(model, store, items, condition, bs, max_new):
     keys = condition_keys(items, condition)
-    preds, t0 = [], time.perf_counter()
-    for s in range(0, len(items), bs):
-        chunk = items[s : s + bs]
-        feats = store.get(keys[s : s + bs]) if keys is not None else None
+    t0 = time.perf_counter()
+
+    def step(s, e):
+        feats = store.get(keys[s:e]) if keys is not None else None
         with torch.autocast("cuda", dtype=torch.float16, enabled=model.device.type == "cuda"):
-            preds += model.generate(feats, [i["question"] for i in chunk], max_new)
+            return model.generate(feats, [i["question"] for i in items[s:e]], max_new)
+
+    preds = run_batched(step, len(items), bs, label="generate")
     if model.device.type == "cuda":
         torch.cuda.synchronize()
     return preds, time.perf_counter() - t0
@@ -87,12 +90,14 @@ def dev_eval(model, store, splits, cfg, with_generation=True):
     caps = caption_examples(splits["caption"]["dev"], "val")
     losses = []
     with torch.no_grad():
-        for s in range(0, len(caps), 16):
-            chunk = caps[s : s + 16]
+        def cap_step(s, e):
+            chunk = caps[s:e]
             feats = store.get([c.image for c in chunk])
             tg = [model.target_ids(c.target, "caption") for c in chunk]
             with torch.autocast("cuda", dtype=torch.float16, enabled=model.device.type == "cuda"):
-                losses += model.example_loss(feats, [c.question for c in chunk], tg).float().cpu().tolist()
+                return model.example_loss(feats, [c.question for c in chunk], tg).float().cpu().tolist()
+
+        losses = run_batched(cap_step, len(caps), 16, label="dev_caption")
     res["caption_loss"] = float(np.mean(losses))
     for suite in ("grounding", "natural"):
         items = build_eval_items(suite_pairs(splits, "dev", suite))
@@ -129,8 +134,16 @@ def final_eval(model, store, splits, cfg, out_dir, log):
         writer = Jsonl(out_dir / f"final_predictions_{suite}.jsonl", "w")
         bar = progress(len(CONDITIONS), f"final {suite}", unit="cond")
         for cond in CONDITIONS:
-            preds, secs = generate_all(model, store, items, cond, cfg.gen_bs, cfg.max_new)
-            nll = answer_nll(model, store, items, cond)
+            cpath = out_dir / "eval_cache" / f"{suite}_{cond}.json"
+            cpath.parent.mkdir(parents=True, exist_ok=True)
+            if cpath.exists():
+                cached = load_json(cpath)
+                preds, secs, nll = cached["preds"], cached["secs"], cached["nll"]
+                log.info("[%s/%s] reused from cache", suite, cond)
+            else:
+                preds, secs = generate_all(model, store, items, cond, cfg.gen_bs, cfg.max_new)
+                nll = answer_nll(model, store, items, cond)
+                save_json({"preds": preds, "secs": secs, "nll": nll}, cpath)
             scored = score_items(items, preds, suite)
             for it, pred, sc, nl in zip(items, preds, scored, nll):
                 writer.write(suite=suite, condition=cond, pair_id=it["pair_id"], slot=it["slot"], subtype=it["subtype"], question=it["question"], image=it["image"], partner=it["partner"], mismatched=it["mismatched"], target=it["target"], partner_target=it["partner_target"], refs=it["refs"], prediction=pred, nll=nl, **{k: v for k, v in sc.items() if k != "norm"})

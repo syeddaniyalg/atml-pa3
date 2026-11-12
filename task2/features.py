@@ -50,12 +50,23 @@ def cache_features(cfg, log):
         return
     device = get_device()
     model = SiglipVisionModel.from_pretrained(VISION, torch_dtype=torch.float16).to(device).eval()
-    out = np.lib.format.open_memmap(FEATS, mode="w+", dtype=np.float16, shape=(len(keys), 196, 768))
+    progress_file = FEATS.with_suffix(".progress")
+    resume_at = 0
+    out = None
+    if FEATS.exists() and progress_file.exists():
+        out = np.lib.format.open_memmap(FEATS, mode="r+")
+        if out.shape[0] == len(keys):
+            resume_at = int(progress_file.read_text().strip() or 0)
+            log.info("resuming feature cache at image %d of %d", resume_at, len(keys))
+        else:
+            out = None
+    if out is None:
+        out = np.lib.format.open_memmap(FEATS, mode="w+", dtype=np.float16, shape=(len(keys), 196, 768))
     THUMBS.mkdir(parents=True, exist_ok=True)
     reset_peak()
     t_dl = t_gpu = 0.0
     bs = 64
-    bar = progress(len(keys), "siglip features", unit="img")
+    bar = progress(len(keys), "siglip features", unit="img", initial=resume_at)
     pool = ThreadPoolExecutor(cfg.n_img_workers)
 
     def fetch(key):
@@ -64,7 +75,7 @@ def cache_features(cfg, log):
             img.resize((224, 224)).save(THUMBS / f"{key.replace(':', '_')}.jpg", quality=85)
         return preprocess(img)
 
-    for start in range(0, len(keys), bs):
+    for start in range(resume_at, len(keys), bs):
         chunk = keys[start : start + bs]
         t0 = time.perf_counter()
         batch = np.stack(list(pool.map(fetch, chunk)))
@@ -73,6 +84,9 @@ def cache_features(cfg, log):
         with torch.no_grad():
             feats = model(pixel_values=torch.from_numpy(batch).to(device, torch.float16)).last_hidden_state
         out[start : start + len(chunk)] = feats.cpu().numpy()
+        if (start // bs) % 20 == 19:
+            out.flush()
+            progress_file.write_text(str(start + len(chunk)))
         t_gpu += time.perf_counter() - t0
         bar.update(len(chunk))
         bar.set_postfix(dl_s=f"{t_dl:.0f}", gpu_s=f"{t_gpu:.0f}")

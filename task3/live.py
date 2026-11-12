@@ -8,7 +8,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from common.log import fmt_metrics, get_logger, line, progress
-from common.utils import Jsonl, env_info, peak_mem_gb, reset_peak, save_json, seed_all, set_child_env
+from common.utils import Jsonl, env_info, free_cuda, peak_mem_gb, reset_peak, save_json, seed_all, set_child_env
 from task3.answers import grade_math_groups, group_math, last_boxed, math_equal
 from task3.config import INSTRUCTION, LIVE_MODEL, LIVE_REVISION, N_LIVE, OUT, REVIEW, SEED, SYSTEM
 
@@ -40,7 +40,15 @@ class Generator:
         seed_all(seed)
         torch.cuda.synchronize()
         t0 = time.perf_counter()
-        out = self.model.generate(**enc, max_new_tokens=max_new, pad_token_id=self.tok.eos_token_id, eos_token_id=self.eos, **SAMPLING)
+        for attempt in range(3):
+            try:
+                seed_all(seed)
+                out = self.model.generate(**enc, max_new_tokens=max_new, pad_token_id=self.tok.eos_token_id, eos_token_id=self.eos, **SAMPLING)
+                break
+            except torch.OutOfMemoryError:
+                free_cuda()
+                if attempt == 2:
+                    raise
         torch.cuda.synchronize()
         secs = time.perf_counter() - t0
         new = out[0, enc["input_ids"].shape[1] :].tolist()

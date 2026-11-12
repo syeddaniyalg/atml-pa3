@@ -98,6 +98,24 @@ def path_size(path):
     return sum(f.stat().st_size for f in path.rglob("*") if f.is_file())
 
 
+def run_batched(fn, n, bs, log=None, label=""):
+    out, s = [], 0
+    while s < n:
+        e = min(s + bs, n)
+        try:
+            out += fn(s, e)
+        except torch.OutOfMemoryError:
+            free_cuda()
+            if bs <= 1:
+                raise
+            bs = max(1, bs // 2)
+            if log is not None:
+                log.warning("[%s] OOM, batch size now %d", label, bs)
+            continue
+        s = e
+    return out
+
+
 def free_cuda():
     gc.collect()
     if torch.cuda.is_available():
