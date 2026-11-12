@@ -1,0 +1,17 @@
+transformers==4.57.1
+tokenizers<0.23
+huggingface_hub<1.0
+datasets==4.4.1
+accelerate
+lm_eval==0.4.9.1
+math-verify
+gdown
+pyarrow
+pandas
+scipy
+numpy
+matplotlib
+pillow
+requests
+pyyaml
+tqdm
