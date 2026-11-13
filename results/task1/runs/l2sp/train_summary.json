@@ -1,0 +1,37 @@
+{
+  "method": "l2sp",
+  "spec": {
+    "kind": "full",
+    "lr": 2e-05,
+    "lam": 0.001
+  },
+  "trainable_params": 596049920,
+  "total_params": 596049920,
+  "train_seconds": 9119.476027594,
+  "checkpoint_seconds": 99.53677061400049,
+  "peak_mem_gb": 11.686286449432373,
+  "recovery_ckpt_bytes": 7152985977,
+  "skipped_updates": 0,
+  "final": {
+    "omega": 19.641016006469727,
+    "lam_omega": 0.019641016006469728,
+    "total_loss": 0.18436028647469704,
+    "update": 1250,
+    "examples": 40000,
+    "sft_loss": 0.16471927046822732,
+    "lr": 3.3594197175190743e-11,
+    "grad_norm": 1.6242568492889404,
+    "loss_scale": 65536.0,
+    "skipped": false,
+    "tokens": 5082,
+    "step_seconds": 6.8030740350004635,
+    "tok_per_s": 747.0152424998053,
+    "mem_gb": 11.686286449432373
+  },
+  "reference_bytes": 2384199680,
+  "reference_build_seconds": 4.626821284000016,
+  "displacement_mid": 6.431351960554151,
+  "displacement_final": 6.267538602908797,
+  "penalty_seconds": 362.08043312499467,
+  "weights_bytes": 2384327919
+}

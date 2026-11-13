@@ -1,0 +1,67 @@
+{
+  "env": {
+    "torch": "2.11.0+cu130",
+    "cuda": true,
+    "gpu": "Tesla T4",
+    "gpu_mem_gb": 14.56,
+    "transformers": "4.57.1",
+    "lm_eval": "0.4.9.1",
+    "math_verify": "unknown",
+    "datasets": "3.6.0"
+  },
+  "versions": {
+    "transformers": "4.57.1",
+    "lm_eval": "0.4.9.1",
+    "math-verify": "0.9.0",
+    "datasets": "3.6.0",
+    "torch": "2.11.0+cu130",
+    "peft": "0.21.2"
+  },
+  "cfg": {
+    "n_examples": 40000,
+    "max_len": 2048,
+    "micro": 2,
+    "accum": 16,
+    "updates": 1250,
+    "warmup": 38,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "dropout": 0.05,
+    "ckpt_updates": [
+      312,
+      625,
+      937,
+      1250
+    ],
+    "mid_update": 625,
+    "diag_layers": [
+      0,
+      13,
+      27
+    ],
+    "protect_k": 128,
+    "probe_n": 32,
+    "eval_limit": 0,
+    "gsm_bs": 48,
+    "ll_bs": 8,
+    "gsm_max_new": 1024,
+    "qual_max_new": 512,
+    "qual_bs": 8,
+    "log_every": 10,
+    "tiny": false,
+    "smoke": false,
+    "keep_ckpt": 1
+  },
+  "method": {
+    "kind": "lora",
+    "r": 4,
+    "alpha": 8,
+    "lr": 0.0002
+  },
+  "seed": 6304
+}

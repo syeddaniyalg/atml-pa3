@@ -1,0 +1,13 @@
+dataset,policy,stop_at,fraction
+mathvista,fixed32,4,0.0
+mathvista,fixed32,8,0.0
+mathvista,fixed32,16,0.0
+mathvista,fixed32,32,1.0
+mathvista,agreement,4,0.764
+mathvista,agreement,8,0.078375
+mathvista,agreement,16,0.021
+mathvista,agreement,32,0.136625
+mathvista,quality,4,0.69475
+mathvista,quality,8,0.104125
+mathvista,quality,16,0.03
+mathvista,quality,32,0.171125

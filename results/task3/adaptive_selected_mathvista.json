@@ -1,0 +1,16 @@
+{
+  "agreement": {
+    "tau": 0.5,
+    "delta": null,
+    "dev_accuracy": 0.636,
+    "dev_tokens": 3529.8705,
+    "fallback_fixed32": false
+  },
+  "quality": {
+    "tau": 0.5,
+    "delta": 0.0,
+    "dev_accuracy": 0.6395,
+    "dev_tokens": 3977.8365,
+    "fallback_fixed32": false
+  }
+}

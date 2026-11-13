@@ -1,0 +1,29 @@
+{
+  "bootstrap_accuracy_differences": {
+    "parallel_minus_long": {
+      "diff": 0.0,
+      "lo": -0.14,
+      "hi": 0.12
+    },
+    "refine_minus_long": {
+      "diff": 0.04,
+      "lo": -0.06,
+      "hi": 0.16
+    },
+    "refine_minus_parallel": {
+      "diff": 0.04,
+      "lo": -0.04,
+      "hi": 0.12
+    }
+  },
+  "transitions": {
+    "wrong_to_correct": 2,
+    "correct_to_wrong": 1,
+    "correct_to_correct": 29,
+    "wrong_to_wrong": 18,
+    "answer_changed": 11,
+    "initial_accuracy": 0.6,
+    "revision_prompt_tokens_mean": 768.16
+  },
+  "questions": 50
+}

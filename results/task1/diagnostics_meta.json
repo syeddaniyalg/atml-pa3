@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "protect_k": 128,
+  "layers": [
+    0,
+    13,
+    27
+  ],
+  "n_probe": 64
+}

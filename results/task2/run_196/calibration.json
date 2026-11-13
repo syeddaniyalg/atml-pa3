@@ -1,0 +1,6 @@
+{
+  "rule": "scale = mean L2 norm of text-token embeddings / mean L2 norm of initial connector outputs, measured on 64 training captions",
+  "text_norm": 0.8338052034378052,
+  "connector_norm_before": 15.958642959594727,
+  "scale": 0.052247876310592
+}

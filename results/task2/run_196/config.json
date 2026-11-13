@@ -1,0 +1,135 @@
+{
+  "env": {
+    "torch": "2.14.1+cu130",
+    "cuda": true,
+    "gpu": "Tesla T4",
+    "gpu_mem_gb": 14.56,
+    "transformers": "4.57.1",
+    "lm_eval": "0.4.9.1",
+    "math_verify": "unknown",
+    "datasets": "3.6.0"
+  },
+  "versions": {
+    "transformers": "4.57.1",
+    "lm_eval": "0.4.9.1",
+    "math-verify": "0.9.0",
+    "datasets": "3.6.0",
+    "torch": "2.14.1+cu130",
+    "peft": "0.21.2"
+  },
+  "cfg": {
+    "tokens": 196,
+    "micro": 8,
+    "accum": 2,
+    "n_train_images": 6000,
+    "captions_per_image": 3,
+    "n_dev_caption": 96,
+    "pool_presence": 1200,
+    "pool_counting": 1200,
+    "grounding_dev_pairs": 12,
+    "grounding_test_pairs": 32,
+    "natural_train": [
+      640,
+      256,
+      640
+    ],
+    "natural_dev": [
+      12,
+      8,
+      12
+    ],
+    "natural_test": [
+      36,
+      24,
+      36
+    ],
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "warmup_frac": 0.05,
+    "final_lr_frac": 0.1,
+    "q_cap": 80,
+    "cap_cap": 64,
+    "ans_cap": 16,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "ckpt_every": 250,
+    "dev_every": 500,
+    "dev_points": [
+      2250,
+      3750,
+      4500
+    ],
+    "gen_bs": 8,
+    "max_new": 16,
+    "bootstrap": 4000,
+    "stage_updates": [
+      2250,
+      1500,
+      750
+    ],
+    "log_every": 25,
+    "smoke": false,
+    "tiny": false,
+    "n_img_workers": 24
+  },
+  "stages": [
+    {
+      "name": "caption",
+      "updates": 2250,
+      "conn_lr": 0.001,
+      "lora_lr": 0.0,
+      "mix": [
+        [
+          "caption",
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "vit",
+      "updates": 1500,
+      "conn_lr": 0.0001,
+      "lora_lr": 2e-05,
+      "mix": [
+        [
+          "presence",
+          0.5
+        ],
+        [
+          "counting",
+          0.25
+        ],
+        [
+          "caption",
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "natural",
+      "updates": 750,
+      "conn_lr": 5e-05,
+      "lora_lr": 1e-05,
+      "mix": [
+        [
+          "natural",
+          0.7
+        ],
+        [
+          "presence",
+          0.1
+        ],
+        [
+          "counting",
+          0.1
+        ],
+        [
+          "caption",
+          0.1
+        ]
+      ]
+    }
+  ],
+  "seed": 6304
+}

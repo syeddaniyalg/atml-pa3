@@ -1,0 +1,143 @@
+18:36:00 | oplora16 | env: {'torch': '2.11.0+cu130', 'cuda': True, 'gpu': 'Tesla T4', 'gpu_mem_gb': 14.56, 'transformers': '4.57.1', 'lm_eval': '0.4.9.1', 'math_verify': 'unknown', 'datasets': '3.6.0'}
+18:36:49 | oplora16 | oplora bases: 308.0 MB in 32.5s
+18:36:49 | oplora16 | method=oplora16 trainable=10.09M total=606.14M
+18:38:28 | oplora16 | [10/1250] sft_loss=0.484 | lr=5.263e-05 | grad_norm=1.043 | tok_per_s=573.4 | mem_gb=3.428
+18:40:09 | oplora16 | [20/1250] sft_loss=0.3622 | lr=0.0001053 | grad_norm=0.5075 | tok_per_s=517.6 | mem_gb=3.459
+18:41:51 | oplora16 | [30/1250] sft_loss=0.3021 | lr=0.0001579 | grad_norm=0.3834 | tok_per_s=639.4 | mem_gb=3.554
+18:43:31 | oplora16 | [40/1250] sft_loss=0.3004 | lr=0.0002 | grad_norm=0.3502 | tok_per_s=535.7 | mem_gb=3.554
+18:45:12 | oplora16 | [50/1250] sft_loss=0.254 | lr=0.0002 | grad_norm=0.2767 | tok_per_s=681.1 | mem_gb=3.554
+18:46:50 | oplora16 | [60/1250] sft_loss=0.2728 | lr=0.0001999 | grad_norm=0.2825 | tok_per_s=612.7 | mem_gb=3.554
+18:48:32 | oplora16 | [70/1250] sft_loss=0.2725 | lr=0.0001997 | grad_norm=0.3174 | tok_per_s=642.5 | mem_gb=3.554
+18:50:12 | oplora16 | [80/1250] sft_loss=0.2565 | lr=0.0001994 | grad_norm=0.305 | tok_per_s=619.4 | mem_gb=3.554
+18:51:52 | oplora16 | [90/1250] sft_loss=0.252 | lr=0.0001991 | grad_norm=0.3015 | tok_per_s=627 | mem_gb=3.554
+18:53:32 | oplora16 | [100/1250] sft_loss=0.2582 | lr=0.0001988 | grad_norm=0.2879 | tok_per_s=602.6 | mem_gb=3.554
+18:55:10 | oplora16 | [110/1250] sft_loss=0.2652 | lr=0.0001983 | grad_norm=0.3108 | tok_per_s=566.9 | mem_gb=3.554
+18:56:50 | oplora16 | [120/1250] sft_loss=0.2299 | lr=0.0001978 | grad_norm=0.2684 | tok_per_s=601.7 | mem_gb=3.554
+18:58:28 | oplora16 | [130/1250] sft_loss=0.2343 | lr=0.0001972 | grad_norm=0.2717 | tok_per_s=628.2 | mem_gb=3.554
+19:00:07 | oplora16 | [140/1250] sft_loss=0.2434 | lr=0.0001966 | grad_norm=0.3267 | tok_per_s=465.9 | mem_gb=3.554
+19:01:45 | oplora16 | [150/1250] sft_loss=0.2428 | lr=0.0001959 | grad_norm=0.2609 | tok_per_s=560.8 | mem_gb=3.554
+19:03:24 | oplora16 | [160/1250] sft_loss=0.2281 | lr=0.0001951 | grad_norm=0.2732 | tok_per_s=579.6 | mem_gb=3.554
+19:05:06 | oplora16 | [170/1250] sft_loss=0.2626 | lr=0.0001943 | grad_norm=0.2788 | tok_per_s=679.7 | mem_gb=3.554
+19:06:45 | oplora16 | [180/1250] sft_loss=0.2555 | lr=0.0001934 | grad_norm=0.3073 | tok_per_s=556.6 | mem_gb=3.554
+19:08:24 | oplora16 | [190/1250] sft_loss=0.2202 | lr=0.0001924 | grad_norm=0.2896 | tok_per_s=547.2 | mem_gb=3.554
+19:10:03 | oplora16 | [200/1250] sft_loss=0.2091 | lr=0.0001914 | grad_norm=0.288 | tok_per_s=537.7 | mem_gb=3.554
+19:11:44 | oplora16 | [210/1250] sft_loss=0.2619 | lr=0.0001903 | grad_norm=0.287 | tok_per_s=516 | mem_gb=3.554
+19:13:25 | oplora16 | [220/1250] sft_loss=0.2507 | lr=0.0001892 | grad_norm=0.2859 | tok_per_s=522.5 | mem_gb=3.554
+19:15:04 | oplora16 | [230/1250] sft_loss=0.1955 | lr=0.000188 | grad_norm=0.24 | tok_per_s=532.2 | mem_gb=3.554
+19:16:42 | oplora16 | [240/1250] sft_loss=0.2571 | lr=0.0001867 | grad_norm=0.2652 | tok_per_s=648.7 | mem_gb=3.554
+19:18:21 | oplora16 | [250/1250] sft_loss=0.2481 | lr=0.0001854 | grad_norm=0.3004 | tok_per_s=531 | mem_gb=3.554
+19:20:03 | oplora16 | [260/1250] sft_loss=0.2019 | lr=0.000184 | grad_norm=0.2399 | tok_per_s=531.8 | mem_gb=3.554
+19:21:41 | oplora16 | [270/1250] sft_loss=0.238 | lr=0.0001826 | grad_norm=0.2733 | tok_per_s=595.5 | mem_gb=3.554
+19:23:22 | oplora16 | [280/1250] sft_loss=0.1927 | lr=0.0001811 | grad_norm=0.214 | tok_per_s=721.5 | mem_gb=3.554
+19:25:03 | oplora16 | [290/1250] sft_loss=0.2855 | lr=0.0001796 | grad_norm=0.3048 | tok_per_s=532.8 | mem_gb=3.554
+19:26:42 | oplora16 | [300/1250] sft_loss=0.2171 | lr=0.000178 | grad_norm=0.2732 | tok_per_s=550 | mem_gb=3.554
+19:28:21 | oplora16 | [310/1250] sft_loss=0.2569 | lr=0.0001763 | grad_norm=0.2565 | tok_per_s=643.4 | mem_gb=3.554
+19:28:42 | oplora16 | recovery checkpoint u312 saved (0.11 GB)
+19:30:02 | oplora16 | [320/1250] sft_loss=0.1879 | lr=0.0001746 | grad_norm=0.2218 | tok_per_s=645.7 | mem_gb=3.554
+19:31:42 | oplora16 | [330/1250] sft_loss=0.2193 | lr=0.0001729 | grad_norm=0.2766 | tok_per_s=509 | mem_gb=3.554
+19:33:22 | oplora16 | [340/1250] sft_loss=0.2098 | lr=0.0001711 | grad_norm=0.2579 | tok_per_s=594.4 | mem_gb=3.554
+19:35:04 | oplora16 | [350/1250] sft_loss=0.23 | lr=0.0001692 | grad_norm=0.2477 | tok_per_s=615.5 | mem_gb=3.554
+19:36:43 | oplora16 | [360/1250] sft_loss=0.2417 | lr=0.0001673 | grad_norm=0.2525 | tok_per_s=525.7 | mem_gb=3.554
+19:38:24 | oplora16 | [370/1250] sft_loss=0.2497 | lr=0.0001654 | grad_norm=0.2825 | tok_per_s=524.3 | mem_gb=3.554
+19:40:03 | oplora16 | [380/1250] sft_loss=0.2132 | lr=0.0001634 | grad_norm=0.2756 | tok_per_s=457.1 | mem_gb=3.554
+19:41:43 | oplora16 | [390/1250] sft_loss=0.2038 | lr=0.0001614 | grad_norm=0.2716 | tok_per_s=532.8 | mem_gb=3.554
+19:43:22 | oplora16 | [400/1250] sft_loss=0.2127 | lr=0.0001593 | grad_norm=0.2614 | tok_per_s=613.5 | mem_gb=3.554
+19:45:01 | oplora16 | [410/1250] sft_loss=0.2128 | lr=0.0001572 | grad_norm=0.2479 | tok_per_s=553.6 | mem_gb=3.554
+19:46:40 | oplora16 | [420/1250] sft_loss=0.2503 | lr=0.0001551 | grad_norm=0.2754 | tok_per_s=513.7 | mem_gb=3.554
+19:48:19 | oplora16 | [430/1250] sft_loss=0.2104 | lr=0.0001529 | grad_norm=0.2571 | tok_per_s=563.3 | mem_gb=3.554
+19:49:58 | oplora16 | [440/1250] sft_loss=0.2049 | lr=0.0001507 | grad_norm=0.2556 | tok_per_s=509.3 | mem_gb=3.554
+19:51:39 | oplora16 | [450/1250] sft_loss=0.2313 | lr=0.0001484 | grad_norm=0.2697 | tok_per_s=492.4 | mem_gb=3.554
+19:53:19 | oplora16 | [460/1250] sft_loss=0.2332 | lr=0.0001461 | grad_norm=0.2432 | tok_per_s=606.3 | mem_gb=3.554
+19:54:57 | oplora16 | [470/1250] sft_loss=0.2171 | lr=0.0001438 | grad_norm=0.264 | tok_per_s=581.2 | mem_gb=3.554
+19:56:37 | oplora16 | [480/1250] sft_loss=0.2237 | lr=0.0001415 | grad_norm=0.2499 | tok_per_s=567.4 | mem_gb=3.554
+19:58:18 | oplora16 | [490/1250] sft_loss=0.1667 | lr=0.0001391 | grad_norm=0.2424 | tok_per_s=566 | mem_gb=3.554
+19:59:58 | oplora16 | [500/1250] sft_loss=0.2124 | lr=0.0001367 | grad_norm=0.25 | tok_per_s=622.7 | mem_gb=3.554
+20:01:38 | oplora16 | [510/1250] sft_loss=0.2262 | lr=0.0001343 | grad_norm=0.2561 | tok_per_s=551.1 | mem_gb=3.554
+20:03:19 | oplora16 | [520/1250] sft_loss=0.1915 | lr=0.0001318 | grad_norm=0.2289 | tok_per_s=613.9 | mem_gb=3.554
+20:05:00 | oplora16 | [530/1250] sft_loss=0.2024 | lr=0.0001294 | grad_norm=0.242 | tok_per_s=570.9 | mem_gb=3.554
+20:06:38 | oplora16 | [540/1250] sft_loss=0.233 | lr=0.0001269 | grad_norm=0.2816 | tok_per_s=585.1 | mem_gb=3.554
+20:08:21 | oplora16 | [550/1250] sft_loss=0.2036 | lr=0.0001244 | grad_norm=0.2522 | tok_per_s=570.4 | mem_gb=3.554
+20:09:58 | oplora16 | [560/1250] sft_loss=0.2292 | lr=0.0001219 | grad_norm=0.2426 | tok_per_s=575.2 | mem_gb=3.554
+20:11:37 | oplora16 | [570/1250] sft_loss=0.2087 | lr=0.0001193 | grad_norm=0.2443 | tok_per_s=502.6 | mem_gb=3.554
+20:13:18 | oplora16 | [580/1250] sft_loss=0.2046 | lr=0.0001168 | grad_norm=0.2386 | tok_per_s=544.8 | mem_gb=3.554
+20:14:56 | oplora16 | [590/1250] sft_loss=0.2168 | lr=0.0001142 | grad_norm=0.2454 | tok_per_s=613.1 | mem_gb=3.554
+20:16:35 | oplora16 | [600/1250] sft_loss=0.2025 | lr=0.0001116 | grad_norm=0.2479 | tok_per_s=542.8 | mem_gb=3.554
+20:18:15 | oplora16 | [610/1250] sft_loss=0.1809 | lr=0.0001091 | grad_norm=0.2237 | tok_per_s=505.8 | mem_gb=3.554
+20:19:55 | oplora16 | [620/1250] sft_loss=0.2538 | lr=0.0001065 | grad_norm=0.28 | tok_per_s=499 | mem_gb=3.554
+20:20:46 | oplora16 | recovery checkpoint u625 saved (0.11 GB)
+20:21:35 | oplora16 | [630/1250] sft_loss=0.1888 | lr=0.0001039 | grad_norm=0.2488 | tok_per_s=586.3 | mem_gb=3.554
+20:23:15 | oplora16 | [640/1250] sft_loss=0.191 | lr=0.0001013 | grad_norm=0.2379 | tok_per_s=579.7 | mem_gb=3.554
+20:24:55 | oplora16 | [650/1250] sft_loss=0.1795 | lr=9.87e-05 | grad_norm=0.2447 | tok_per_s=540.8 | mem_gb=3.554
+20:26:34 | oplora16 | [660/1250] sft_loss=0.2243 | lr=9.611e-05 | grad_norm=0.2368 | tok_per_s=601.7 | mem_gb=3.554
+20:28:14 | oplora16 | [670/1250] sft_loss=0.1951 | lr=9.352e-05 | grad_norm=0.2226 | tok_per_s=598.1 | mem_gb=3.554
+20:29:53 | oplora16 | [680/1250] sft_loss=0.2097 | lr=9.094e-05 | grad_norm=0.289 | tok_per_s=526.2 | mem_gb=3.554
+20:31:35 | oplora16 | [690/1250] sft_loss=0.2237 | lr=8.836e-05 | grad_norm=0.2682 | tok_per_s=505.8 | mem_gb=3.554
+20:33:16 | oplora16 | [700/1250] sft_loss=0.2141 | lr=8.579e-05 | grad_norm=0.2471 | tok_per_s=561 | mem_gb=3.554
+20:34:56 | oplora16 | [710/1250] sft_loss=0.1976 | lr=8.323e-05 | grad_norm=0.279 | tok_per_s=461.6 | mem_gb=3.554
+20:36:34 | oplora16 | [720/1250] sft_loss=0.2221 | lr=8.068e-05 | grad_norm=0.2723 | tok_per_s=497.8 | mem_gb=3.554
+20:38:14 | oplora16 | [730/1250] sft_loss=0.2039 | lr=7.815e-05 | grad_norm=0.2417 | tok_per_s=593.9 | mem_gb=3.554
+20:39:55 | oplora16 | [740/1250] sft_loss=0.2064 | lr=7.562e-05 | grad_norm=0.2291 | tok_per_s=644.7 | mem_gb=3.554
+20:41:33 | oplora16 | [750/1250] sft_loss=0.1598 | lr=7.312e-05 | grad_norm=0.2351 | tok_per_s=608.1 | mem_gb=3.554
+20:43:12 | oplora16 | [760/1250] sft_loss=0.2435 | lr=7.063e-05 | grad_norm=0.2617 | tok_per_s=566.8 | mem_gb=3.554
+20:44:50 | oplora16 | [770/1250] sft_loss=0.1948 | lr=6.816e-05 | grad_norm=0.2696 | tok_per_s=556 | mem_gb=3.554
+20:46:30 | oplora16 | [780/1250] sft_loss=0.2081 | lr=6.572e-05 | grad_norm=0.2579 | tok_per_s=598.9 | mem_gb=3.554
+20:48:08 | oplora16 | [790/1250] sft_loss=0.1763 | lr=6.329e-05 | grad_norm=0.2331 | tok_per_s=548.6 | mem_gb=3.554
+20:49:47 | oplora16 | [800/1250] sft_loss=0.1831 | lr=6.09e-05 | grad_norm=0.239 | tok_per_s=550.2 | mem_gb=3.554
+20:51:27 | oplora16 | [810/1250] sft_loss=0.241 | lr=5.852e-05 | grad_norm=0.3091 | tok_per_s=454.1 | mem_gb=3.554
+20:53:04 | oplora16 | [820/1250] sft_loss=0.1903 | lr=5.618e-05 | grad_norm=0.2658 | tok_per_s=522 | mem_gb=3.554
+20:54:42 | oplora16 | [830/1250] sft_loss=0.1763 | lr=5.386e-05 | grad_norm=0.22 | tok_per_s=605.2 | mem_gb=3.554
+20:56:21 | oplora16 | [840/1250] sft_loss=0.2163 | lr=5.158e-05 | grad_norm=0.2772 | tok_per_s=565.5 | mem_gb=3.554
+20:57:59 | oplora16 | [850/1250] sft_loss=0.2052 | lr=4.933e-05 | grad_norm=0.2279 | tok_per_s=609.1 | mem_gb=3.554
+20:59:37 | oplora16 | [860/1250] sft_loss=0.1723 | lr=4.711e-05 | grad_norm=0.2325 | tok_per_s=561.5 | mem_gb=3.554
+21:01:16 | oplora16 | [870/1250] sft_loss=0.1657 | lr=4.493e-05 | grad_norm=0.2344 | tok_per_s=543.3 | mem_gb=3.554
+21:02:54 | oplora16 | [880/1250] sft_loss=0.1734 | lr=4.278e-05 | grad_norm=0.2346 | tok_per_s=660.3 | mem_gb=3.554
+21:04:31 | oplora16 | [890/1250] sft_loss=0.1986 | lr=4.068e-05 | grad_norm=0.2422 | tok_per_s=529.1 | mem_gb=3.554
+21:06:09 | oplora16 | [900/1250] sft_loss=0.1828 | lr=3.861e-05 | grad_norm=0.2435 | tok_per_s=538.3 | mem_gb=3.554
+21:07:47 | oplora16 | [910/1250] sft_loss=0.1647 | lr=3.659e-05 | grad_norm=0.2336 | tok_per_s=482.4 | mem_gb=3.554
+21:09:25 | oplora16 | [920/1250] sft_loss=0.2263 | lr=3.46e-05 | grad_norm=0.2661 | tok_per_s=538.3 | mem_gb=3.554
+21:11:03 | oplora16 | [930/1250] sft_loss=0.1751 | lr=3.266e-05 | grad_norm=0.224 | tok_per_s=557.5 | mem_gb=3.554
+21:12:11 | oplora16 | recovery checkpoint u937 saved (0.11 GB)
+21:12:40 | oplora16 | [940/1250] sft_loss=0.1839 | lr=3.077e-05 | grad_norm=0.2121 | tok_per_s=665.5 | mem_gb=3.554
+21:14:18 | oplora16 | [950/1250] sft_loss=0.2069 | lr=2.892e-05 | grad_norm=0.277 | tok_per_s=500.6 | mem_gb=3.554
+21:15:58 | oplora16 | [960/1250] sft_loss=0.1716 | lr=2.712e-05 | grad_norm=0.224 | tok_per_s=621.9 | mem_gb=3.554
+21:17:37 | oplora16 | [970/1250] sft_loss=0.2252 | lr=2.537e-05 | grad_norm=0.2561 | tok_per_s=614.6 | mem_gb=3.554
+21:19:14 | oplora16 | [980/1250] sft_loss=0.1967 | lr=2.367e-05 | grad_norm=0.2504 | tok_per_s=553.4 | mem_gb=3.554
+21:20:53 | oplora16 | [990/1250] sft_loss=0.1895 | lr=2.203e-05 | grad_norm=0.2504 | tok_per_s=592.3 | mem_gb=3.554
+21:22:30 | oplora16 | [1000/1250] sft_loss=0.2216 | lr=2.043e-05 | grad_norm=0.2558 | tok_per_s=585.1 | mem_gb=3.554
+21:24:09 | oplora16 | [1010/1250] sft_loss=0.2014 | lr=1.889e-05 | grad_norm=0.2437 | tok_per_s=576.1 | mem_gb=3.554
+21:25:47 | oplora16 | [1020/1250] sft_loss=0.1615 | lr=1.74e-05 | grad_norm=0.2427 | tok_per_s=550.3 | mem_gb=3.554
+21:27:25 | oplora16 | [1030/1250] sft_loss=0.2183 | lr=1.596e-05 | grad_norm=0.2717 | tok_per_s=520 | mem_gb=3.554
+21:29:03 | oplora16 | [1040/1250] sft_loss=0.1888 | lr=1.459e-05 | grad_norm=0.2424 | tok_per_s=532.2 | mem_gb=3.554
+21:30:40 | oplora16 | [1050/1250] sft_loss=0.2322 | lr=1.327e-05 | grad_norm=0.2685 | tok_per_s=594.1 | mem_gb=3.554
+21:32:18 | oplora16 | [1060/1250] sft_loss=0.1695 | lr=1.201e-05 | grad_norm=0.2129 | tok_per_s=694.1 | mem_gb=3.554
+21:33:57 | oplora16 | [1070/1250] sft_loss=0.2407 | lr=1.081e-05 | grad_norm=0.2854 | tok_per_s=556.2 | mem_gb=3.554
+21:35:37 | oplora16 | [1080/1250] sft_loss=0.1778 | lr=9.664e-06 | grad_norm=0.2349 | tok_per_s=613.1 | mem_gb=3.554
+21:37:15 | oplora16 | [1090/1250] sft_loss=0.2056 | lr=8.582e-06 | grad_norm=0.2575 | tok_per_s=522.3 | mem_gb=3.554
+21:38:54 | oplora16 | [1100/1250] sft_loss=0.2139 | lr=7.563e-06 | grad_norm=0.2692 | tok_per_s=545.8 | mem_gb=3.554
+21:40:33 | oplora16 | [1110/1250] sft_loss=0.1833 | lr=6.605e-06 | grad_norm=0.2526 | tok_per_s=546.6 | mem_gb=3.554
+21:42:12 | oplora16 | [1120/1250] sft_loss=0.1717 | lr=5.71e-06 | grad_norm=0.2325 | tok_per_s=577.9 | mem_gb=3.554
+21:43:52 | oplora16 | [1130/1250] sft_loss=0.1781 | lr=4.878e-06 | grad_norm=0.2296 | tok_per_s=570.1 | mem_gb=3.554
+21:45:32 | oplora16 | [1140/1250] sft_loss=0.1904 | lr=4.111e-06 | grad_norm=0.2082 | tok_per_s=722.5 | mem_gb=3.554
+21:47:11 | oplora16 | [1150/1250] sft_loss=0.1731 | lr=3.407e-06 | grad_norm=0.2391 | tok_per_s=559.5 | mem_gb=3.554
+21:48:51 | oplora16 | [1160/1250] sft_loss=0.2221 | lr=2.769e-06 | grad_norm=0.2438 | tok_per_s=540.9 | mem_gb=3.554
+21:50:29 | oplora16 | [1170/1250] sft_loss=0.1663 | lr=2.196e-06 | grad_norm=0.2235 | tok_per_s=574.9 | mem_gb=3.554
+21:52:06 | oplora16 | [1180/1250] sft_loss=0.1894 | lr=1.689e-06 | grad_norm=0.2413 | tok_per_s=611 | mem_gb=3.554
+21:53:46 | oplora16 | [1190/1250] sft_loss=0.2341 | lr=1.247e-06 | grad_norm=0.2328 | tok_per_s=638.3 | mem_gb=3.554
+21:55:25 | oplora16 | [1200/1250] sft_loss=0.1798 | lr=8.725e-07 | grad_norm=0.2447 | tok_per_s=550.7 | mem_gb=3.554
+21:57:03 | oplora16 | [1210/1250] sft_loss=0.1719 | lr=5.642e-07 | grad_norm=0.2487 | tok_per_s=601 | mem_gb=3.554
+21:58:42 | oplora16 | [1220/1250] sft_loss=0.1806 | lr=3.227e-07 | grad_norm=0.2529 | tok_per_s=543.6 | mem_gb=3.554
+22:00:22 | oplora16 | [1230/1250] sft_loss=0.1914 | lr=1.481e-07 | grad_norm=0.223 | tok_per_s=634.7 | mem_gb=3.554
+22:02:02 | oplora16 | [1240/1250] sft_loss=0.2182 | lr=4.065e-08 | grad_norm=0.264 | tok_per_s=549.9 | mem_gb=3.554
+22:03:42 | oplora16 | [1250/1250] sft_loss=0.1791 | lr=3.359e-10 | grad_norm=0.2412 | tok_per_s=497.2 | mem_gb=3.554
+22:03:43 | oplora16 | recovery checkpoint u1250 saved (0.11 GB)
+22:04:00 | oplora16 | merged vs unmerged logits: {'max_abs_diff': 0.145751953125, 'mean_abs_diff': 0.0069490340538322926, 'argmax_agreement': 1.0}
+22:04:00 | oplora16 | [oplora16_final] gsm8k_cot (generation)
+22:37:16 | oplora16 | [oplora16_final] gsm8k flexible=0.6232 strict=0.0000
+22:37:16 | oplora16 | [oplora16_final] hellaswag / boolq / arc_easy (likelihood)
+10:28:31 | oplora16 | env: {'torch': '2.11.0+cu130', 'cuda': True, 'gpu': 'Tesla T4', 'gpu_mem_gb': 14.56, 'transformers': '4.57.1', 'lm_eval': '0.4.9.1', 'math_verify': 'unknown', 'datasets': '3.6.0'}
+10:28:32 | oplora16 | adapter and training summary found, skipping training for oplora16
+10:28:34 | oplora16 | [oplora16_final] rebuilt gsm8k scores from saved samples: {'gsm8k_flexible_em': 0.623199393479909, 'gsm8k_strict_em': 0.0, 'gsm8k_extractable_rate': 1.0, 'gsm8k_truncated_rate': 0.009097801364670205}
+10:28:34 | oplora16 | [oplora16_final] gsm8k reused from earlier run: flexible=0.6232
+10:28:35 | oplora16 | [oplora16_final] hellaswag / boolq / arc_easy (likelihood)
+10:41:00 | oplora16 | [oplora16_final] scores: {'gsm8k_flexible_em': 0.6232, 'gsm8k_strict_em': 0.0, 'gsm8k_extractable_rate': 1.0, 'gsm8k_truncated_rate': 0.0091, 'hellaswag_acc': 0.3773, 'hellaswag_acc_norm': 0.4733, 'boolq_acc': 0.7095, 'arc_easy_acc': 0.6524, 'arc_easy_acc_norm': 0.6271, 'eval_seconds_benchmarks': 745.8152}
+10:42:08 | oplora16 | qualitative: 24 responses, 2 truncated

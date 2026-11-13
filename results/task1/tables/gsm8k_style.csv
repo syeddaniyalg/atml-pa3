@@ -1,0 +1,8 @@
+condition,flexible EM,strict EM,extractable %,truncated %
+Baseline,43.59,0.0,100.0,0.8
+Full FT (mid),57.01,0.0,100.0,0.5
+Full FT,64.75,0.0,100.0,1.0
+Full FT + L2-SP,63.68,0.0,100.0,0.5
+LoRA-4,58.83,0.0,100.0,1.1
+LoRA-16,61.79,0.0,100.0,1.0
+OPLoRA-16,62.32,0.0,100.0,0.9

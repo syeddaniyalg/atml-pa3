@@ -1,0 +1,36 @@
+{
+  "method": "lora16",
+  "spec": {
+    "kind": "lora",
+    "r": 16,
+    "alpha": 32,
+    "lr": 0.0002
+  },
+  "trainable_params": 10092544,
+  "total_params": 606142464,
+  "train_seconds": 9569.996201577002,
+  "checkpoint_seconds": 0.96497809900211,
+  "peak_mem_gb": 3.2530980110168457,
+  "recovery_ckpt_bytes": 121530021,
+  "skipped_updates": 0,
+  "final": {
+    "update": 1250,
+    "examples": 40000,
+    "sft_loss": 0.1775562424492714,
+    "lr": 3.3594197175190745e-10,
+    "grad_norm": 0.25455668568611145,
+    "loss_scale": 65536.0,
+    "skipped": false,
+    "tokens": 5082,
+    "step_seconds": 7.3660353850027604,
+    "tok_per_s": 689.9233759244419,
+    "mem_gb": 3.2530980110168457
+  },
+  "adapter_bytes": 40484335,
+  "export_seconds": 0.07377401700068731,
+  "merge_check": {
+    "max_abs_diff": 0.162109375,
+    "mean_abs_diff": 0.006671701092272997,
+    "argmax_agreement": 0.9986910820007324
+  }
+}

@@ -1,0 +1,142 @@
+21:40:38 | lora4 | env: {'torch': '2.11.0+cu130', 'cuda': True, 'gpu': 'Tesla T4', 'gpu_mem_gb': 14.56, 'transformers': '4.57.1', 'lm_eval': '0.4.9.1', 'math_verify': 'unknown', 'datasets': '3.6.0'}
+21:40:54 | lora4 | method=lora4 trainable=2.52M total=598.57M
+21:42:11 | lora4 | [10/1250] sft_loss=0.746 | lr=5.263e-05 | grad_norm=1.58 | tok_per_s=749.5 | mem_gb=3.014
+21:43:29 | lora4 | [20/1250] sft_loss=0.4586 | lr=0.0001053 | grad_norm=0.5769 | tok_per_s=693.1 | mem_gb=3.045
+21:44:48 | lora4 | [30/1250] sft_loss=0.3607 | lr=0.0001579 | grad_norm=0.3338 | tok_per_s=821.8 | mem_gb=3.14
+21:46:05 | lora4 | [40/1250] sft_loss=0.337 | lr=0.0002 | grad_norm=0.3123 | tok_per_s=656.9 | mem_gb=3.14
+21:47:23 | lora4 | [50/1250] sft_loss=0.2763 | lr=0.0002 | grad_norm=0.2276 | tok_per_s=860.8 | mem_gb=3.14
+21:48:38 | lora4 | [60/1250] sft_loss=0.3002 | lr=0.0001999 | grad_norm=0.2387 | tok_per_s=805 | mem_gb=3.14
+21:49:58 | lora4 | [70/1250] sft_loss=0.2876 | lr=0.0001997 | grad_norm=0.2649 | tok_per_s=794.9 | mem_gb=3.14
+21:51:16 | lora4 | [80/1250] sft_loss=0.2731 | lr=0.0001994 | grad_norm=0.2616 | tok_per_s=743.5 | mem_gb=3.14
+21:52:35 | lora4 | [90/1250] sft_loss=0.2722 | lr=0.0001991 | grad_norm=0.2638 | tok_per_s=830.5 | mem_gb=3.14
+21:53:51 | lora4 | [100/1250] sft_loss=0.2688 | lr=0.0001988 | grad_norm=0.2356 | tok_per_s=798.9 | mem_gb=3.14
+21:55:06 | lora4 | [110/1250] sft_loss=0.2828 | lr=0.0001983 | grad_norm=0.3162 | tok_per_s=770.6 | mem_gb=3.14
+21:56:25 | lora4 | [120/1250] sft_loss=0.2423 | lr=0.0001978 | grad_norm=0.2641 | tok_per_s=775.2 | mem_gb=3.14
+21:57:43 | lora4 | [130/1250] sft_loss=0.246 | lr=0.0001972 | grad_norm=0.2591 | tok_per_s=804.2 | mem_gb=3.14
+21:58:59 | lora4 | [140/1250] sft_loss=0.2535 | lr=0.0001966 | grad_norm=0.2952 | tok_per_s=634.7 | mem_gb=3.14
+22:00:16 | lora4 | [150/1250] sft_loss=0.2593 | lr=0.0001959 | grad_norm=0.2779 | tok_per_s=672.3 | mem_gb=3.14
+22:01:33 | lora4 | [160/1250] sft_loss=0.239 | lr=0.0001951 | grad_norm=0.2524 | tok_per_s=756.8 | mem_gb=3.14
+22:02:51 | lora4 | [170/1250] sft_loss=0.2717 | lr=0.0001943 | grad_norm=0.2674 | tok_per_s=867.5 | mem_gb=3.14
+22:04:09 | lora4 | [180/1250] sft_loss=0.2681 | lr=0.0001934 | grad_norm=0.3069 | tok_per_s=676.9 | mem_gb=3.14
+22:05:23 | lora4 | [190/1250] sft_loss=0.2322 | lr=0.0001924 | grad_norm=0.3799 | tok_per_s=737.7 | mem_gb=3.14
+22:06:38 | lora4 | [200/1250] sft_loss=0.2171 | lr=0.0001914 | grad_norm=0.2727 | tok_per_s=765 | mem_gb=3.14
+22:07:57 | lora4 | [210/1250] sft_loss=0.2724 | lr=0.0001903 | grad_norm=0.2925 | tok_per_s=656 | mem_gb=3.14
+22:09:15 | lora4 | [220/1250] sft_loss=0.26 | lr=0.0001892 | grad_norm=0.2948 | tok_per_s=708.8 | mem_gb=3.14
+22:10:32 | lora4 | [230/1250] sft_loss=0.208 | lr=0.000188 | grad_norm=0.2635 | tok_per_s=734.1 | mem_gb=3.14
+22:11:47 | lora4 | [240/1250] sft_loss=0.2657 | lr=0.0001867 | grad_norm=0.2614 | tok_per_s=805.8 | mem_gb=3.14
+22:13:04 | lora4 | [250/1250] sft_loss=0.2579 | lr=0.0001854 | grad_norm=0.3053 | tok_per_s=700.8 | mem_gb=3.14
+22:14:22 | lora4 | [260/1250] sft_loss=0.2068 | lr=0.000184 | grad_norm=0.2539 | tok_per_s=729.3 | mem_gb=3.14
+22:15:38 | lora4 | [270/1250] sft_loss=0.2465 | lr=0.0001826 | grad_norm=0.2933 | tok_per_s=770.9 | mem_gb=3.14
+22:16:57 | lora4 | [280/1250] sft_loss=0.2047 | lr=0.0001811 | grad_norm=0.2343 | tok_per_s=911.9 | mem_gb=3.14
+22:18:14 | lora4 | [290/1250] sft_loss=0.295 | lr=0.0001796 | grad_norm=0.3183 | tok_per_s=691.3 | mem_gb=3.14
+22:19:30 | lora4 | [300/1250] sft_loss=0.2242 | lr=0.000178 | grad_norm=0.2837 | tok_per_s=721.8 | mem_gb=3.14
+22:20:46 | lora4 | [310/1250] sft_loss=0.2641 | lr=0.0001763 | grad_norm=0.266 | tok_per_s=794.2 | mem_gb=3.14
+22:21:02 | lora4 | recovery checkpoint u312 saved (0.03 GB)
+22:22:05 | lora4 | [320/1250] sft_loss=0.1961 | lr=0.0001746 | grad_norm=0.2319 | tok_per_s=761.6 | mem_gb=3.14
+22:23:21 | lora4 | [330/1250] sft_loss=0.2304 | lr=0.0001729 | grad_norm=0.2922 | tok_per_s=661 | mem_gb=3.14
+22:24:39 | lora4 | [340/1250] sft_loss=0.2162 | lr=0.0001711 | grad_norm=0.2806 | tok_per_s=755.7 | mem_gb=3.14
+22:25:58 | lora4 | [350/1250] sft_loss=0.2337 | lr=0.0001692 | grad_norm=0.2643 | tok_per_s=792.4 | mem_gb=3.14
+22:27:12 | lora4 | [360/1250] sft_loss=0.2522 | lr=0.0001673 | grad_norm=0.2642 | tok_per_s=728.1 | mem_gb=3.14
+22:28:30 | lora4 | [370/1250] sft_loss=0.2568 | lr=0.0001654 | grad_norm=0.2872 | tok_per_s=691.4 | mem_gb=3.14
+22:29:45 | lora4 | [380/1250] sft_loss=0.2228 | lr=0.0001634 | grad_norm=0.3077 | tok_per_s=632.1 | mem_gb=3.14
+22:31:03 | lora4 | [390/1250] sft_loss=0.2105 | lr=0.0001614 | grad_norm=0.2813 | tok_per_s=707.6 | mem_gb=3.14
+22:32:19 | lora4 | [400/1250] sft_loss=0.2207 | lr=0.0001593 | grad_norm=0.2706 | tok_per_s=812.7 | mem_gb=3.14
+22:33:34 | lora4 | [410/1250] sft_loss=0.2205 | lr=0.0001572 | grad_norm=0.2676 | tok_per_s=725.5 | mem_gb=3.14
+22:34:49 | lora4 | [420/1250] sft_loss=0.2562 | lr=0.0001551 | grad_norm=0.2934 | tok_per_s=664.3 | mem_gb=3.14
+22:36:03 | lora4 | [430/1250] sft_loss=0.2211 | lr=0.0001529 | grad_norm=0.2694 | tok_per_s=748.5 | mem_gb=3.14
+22:37:19 | lora4 | [440/1250] sft_loss=0.2151 | lr=0.0001507 | grad_norm=0.2795 | tok_per_s=666.8 | mem_gb=3.14
+22:38:38 | lora4 | [450/1250] sft_loss=0.2434 | lr=0.0001484 | grad_norm=0.2941 | tok_per_s=638.1 | mem_gb=3.14
+22:39:55 | lora4 | [460/1250] sft_loss=0.2437 | lr=0.0001461 | grad_norm=0.2532 | tok_per_s=816.4 | mem_gb=3.14
+22:41:12 | lora4 | [470/1250] sft_loss=0.2258 | lr=0.0001438 | grad_norm=0.2975 | tok_per_s=740.6 | mem_gb=3.14
+22:42:29 | lora4 | [480/1250] sft_loss=0.2331 | lr=0.0001415 | grad_norm=0.2669 | tok_per_s=724.4 | mem_gb=3.14
+22:43:46 | lora4 | [490/1250] sft_loss=0.1751 | lr=0.0001391 | grad_norm=0.2579 | tok_per_s=779.2 | mem_gb=3.14
+22:45:03 | lora4 | [500/1250] sft_loss=0.2223 | lr=0.0001367 | grad_norm=0.2923 | tok_per_s=800.6 | mem_gb=3.14
+22:46:19 | lora4 | [510/1250] sft_loss=0.2377 | lr=0.0001343 | grad_norm=0.2723 | tok_per_s=661.7 | mem_gb=3.14
+22:47:36 | lora4 | [520/1250] sft_loss=0.2006 | lr=0.0001318 | grad_norm=0.2594 | tok_per_s=793.9 | mem_gb=3.14
+22:48:55 | lora4 | [530/1250] sft_loss=0.2109 | lr=0.0001294 | grad_norm=0.2552 | tok_per_s=744.1 | mem_gb=3.14
+22:50:11 | lora4 | [540/1250] sft_loss=0.2429 | lr=0.0001269 | grad_norm=0.2929 | tok_per_s=746.3 | mem_gb=3.14
+22:51:29 | lora4 | [550/1250] sft_loss=0.2114 | lr=0.0001244 | grad_norm=0.2726 | tok_per_s=753.7 | mem_gb=3.14
+22:52:41 | lora4 | [560/1250] sft_loss=0.2408 | lr=0.0001219 | grad_norm=0.264 | tok_per_s=757.4 | mem_gb=3.14
+22:53:58 | lora4 | [570/1250] sft_loss=0.2188 | lr=0.0001193 | grad_norm=0.2722 | tok_per_s=682.1 | mem_gb=3.14
+22:55:15 | lora4 | [580/1250] sft_loss=0.2147 | lr=0.0001168 | grad_norm=0.2612 | tok_per_s=746.4 | mem_gb=3.14
+22:56:31 | lora4 | [590/1250] sft_loss=0.2262 | lr=0.0001142 | grad_norm=0.267 | tok_per_s=741.3 | mem_gb=3.14
+22:57:47 | lora4 | [600/1250] sft_loss=0.215 | lr=0.0001116 | grad_norm=0.2788 | tok_per_s=703.4 | mem_gb=3.14
+22:59:03 | lora4 | [610/1250] sft_loss=0.1908 | lr=0.0001091 | grad_norm=0.2498 | tok_per_s=719.1 | mem_gb=3.14
+23:00:17 | lora4 | [620/1250] sft_loss=0.2645 | lr=0.0001065 | grad_norm=0.3052 | tok_per_s=659.7 | mem_gb=3.14
+23:00:55 | lora4 | recovery checkpoint u625 saved (0.03 GB)
+23:01:32 | lora4 | [630/1250] sft_loss=0.1979 | lr=0.0001039 | grad_norm=0.2846 | tok_per_s=788.6 | mem_gb=3.14
+23:02:48 | lora4 | [640/1250] sft_loss=0.2007 | lr=0.0001013 | grad_norm=0.2618 | tok_per_s=738.8 | mem_gb=3.14
+23:04:04 | lora4 | [650/1250] sft_loss=0.1907 | lr=9.87e-05 | grad_norm=0.284 | tok_per_s=711.2 | mem_gb=3.14
+23:05:19 | lora4 | [660/1250] sft_loss=0.2341 | lr=9.611e-05 | grad_norm=0.2673 | tok_per_s=773.9 | mem_gb=3.14
+23:06:36 | lora4 | [670/1250] sft_loss=0.2055 | lr=9.352e-05 | grad_norm=0.2534 | tok_per_s=767.4 | mem_gb=3.14
+23:07:50 | lora4 | [680/1250] sft_loss=0.2251 | lr=9.094e-05 | grad_norm=0.305 | tok_per_s=709.2 | mem_gb=3.14
+23:09:10 | lora4 | [690/1250] sft_loss=0.2307 | lr=8.836e-05 | grad_norm=0.287 | tok_per_s=692.2 | mem_gb=3.14
+23:10:27 | lora4 | [700/1250] sft_loss=0.2227 | lr=8.579e-05 | grad_norm=0.2734 | tok_per_s=771.2 | mem_gb=3.14
+23:11:46 | lora4 | [710/1250] sft_loss=0.2101 | lr=8.323e-05 | grad_norm=0.3195 | tok_per_s=615 | mem_gb=3.14
+23:13:00 | lora4 | [720/1250] sft_loss=0.2326 | lr=8.068e-05 | grad_norm=0.3022 | tok_per_s=650.4 | mem_gb=3.14
+23:14:15 | lora4 | [730/1250] sft_loss=0.2149 | lr=7.815e-05 | grad_norm=0.2589 | tok_per_s=818.4 | mem_gb=3.14
+23:15:34 | lora4 | [740/1250] sft_loss=0.217 | lr=7.562e-05 | grad_norm=0.243 | tok_per_s=789.6 | mem_gb=3.14
+23:16:48 | lora4 | [750/1250] sft_loss=0.1692 | lr=7.312e-05 | grad_norm=0.2621 | tok_per_s=796 | mem_gb=3.14
+23:18:04 | lora4 | [760/1250] sft_loss=0.2555 | lr=7.063e-05 | grad_norm=0.292 | tok_per_s=721.6 | mem_gb=3.14
+23:19:20 | lora4 | [770/1250] sft_loss=0.2098 | lr=6.816e-05 | grad_norm=0.3106 | tok_per_s=726.3 | mem_gb=3.14
+23:20:37 | lora4 | [780/1250] sft_loss=0.2232 | lr=6.572e-05 | grad_norm=0.2976 | tok_per_s=769.3 | mem_gb=3.14
+23:21:50 | lora4 | [790/1250] sft_loss=0.1869 | lr=6.329e-05 | grad_norm=0.2661 | tok_per_s=757.8 | mem_gb=3.14
+23:23:06 | lora4 | [800/1250] sft_loss=0.1925 | lr=6.09e-05 | grad_norm=0.2756 | tok_per_s=726.2 | mem_gb=3.14
+23:24:21 | lora4 | [810/1250] sft_loss=0.2571 | lr=5.852e-05 | grad_norm=0.3358 | tok_per_s=584.8 | mem_gb=3.14
+23:25:35 | lora4 | [820/1250] sft_loss=0.202 | lr=5.618e-05 | grad_norm=0.3057 | tok_per_s=688 | mem_gb=3.14
+23:26:50 | lora4 | [830/1250] sft_loss=0.1863 | lr=5.386e-05 | grad_norm=0.2522 | tok_per_s=780.6 | mem_gb=3.14
+23:28:05 | lora4 | [840/1250] sft_loss=0.2281 | lr=5.158e-05 | grad_norm=0.3148 | tok_per_s=759 | mem_gb=3.14
+23:29:18 | lora4 | [850/1250] sft_loss=0.2174 | lr=4.933e-05 | grad_norm=0.2665 | tok_per_s=851 | mem_gb=3.14
+23:30:31 | lora4 | [860/1250] sft_loss=0.1846 | lr=4.711e-05 | grad_norm=0.2722 | tok_per_s=745.9 | mem_gb=3.14
+23:31:45 | lora4 | [870/1250] sft_loss=0.1752 | lr=4.493e-05 | grad_norm=0.2713 | tok_per_s=732.4 | mem_gb=3.14
+23:32:58 | lora4 | [880/1250] sft_loss=0.184 | lr=4.278e-05 | grad_norm=0.2724 | tok_per_s=853.8 | mem_gb=3.14
+23:34:12 | lora4 | [890/1250] sft_loss=0.2138 | lr=4.068e-05 | grad_norm=0.2821 | tok_per_s=714.8 | mem_gb=3.14
+23:35:28 | lora4 | [900/1250] sft_loss=0.1924 | lr=3.861e-05 | grad_norm=0.2829 | tok_per_s=721 | mem_gb=3.14
+23:36:42 | lora4 | [910/1250] sft_loss=0.175 | lr=3.659e-05 | grad_norm=0.2688 | tok_per_s=677.2 | mem_gb=3.14
+23:37:57 | lora4 | [920/1250] sft_loss=0.2368 | lr=3.46e-05 | grad_norm=0.3107 | tok_per_s=724.1 | mem_gb=3.14
+23:39:10 | lora4 | [930/1250] sft_loss=0.1895 | lr=3.266e-05 | grad_norm=0.2534 | tok_per_s=794.6 | mem_gb=3.14
+23:40:01 | lora4 | recovery checkpoint u937 saved (0.03 GB)
+23:40:23 | lora4 | [940/1250] sft_loss=0.1924 | lr=3.077e-05 | grad_norm=0.2519 | tok_per_s=868.2 | mem_gb=3.14
+23:41:37 | lora4 | [950/1250] sft_loss=0.225 | lr=2.892e-05 | grad_norm=0.3119 | tok_per_s=678.2 | mem_gb=3.14
+23:42:54 | lora4 | [960/1250] sft_loss=0.1841 | lr=2.712e-05 | grad_norm=0.2537 | tok_per_s=828.4 | mem_gb=3.14
+23:44:08 | lora4 | [970/1250] sft_loss=0.24 | lr=2.537e-05 | grad_norm=0.2764 | tok_per_s=781.2 | mem_gb=3.14
+23:45:21 | lora4 | [980/1250] sft_loss=0.2088 | lr=2.367e-05 | grad_norm=0.282 | tok_per_s=737.7 | mem_gb=3.14
+23:46:35 | lora4 | [990/1250] sft_loss=0.2027 | lr=2.203e-05 | grad_norm=0.291 | tok_per_s=765.5 | mem_gb=3.14
+23:47:49 | lora4 | [1000/1250] sft_loss=0.2287 | lr=2.043e-05 | grad_norm=0.2824 | tok_per_s=753.9 | mem_gb=3.14
+23:49:04 | lora4 | [1010/1250] sft_loss=0.2146 | lr=1.889e-05 | grad_norm=0.281 | tok_per_s=743.7 | mem_gb=3.14
+23:50:19 | lora4 | [1020/1250] sft_loss=0.1701 | lr=1.74e-05 | grad_norm=0.2742 | tok_per_s=728.1 | mem_gb=3.14
+23:51:33 | lora4 | [1030/1250] sft_loss=0.2314 | lr=1.596e-05 | grad_norm=0.3042 | tok_per_s=719.7 | mem_gb=3.14
+23:52:46 | lora4 | [1040/1250] sft_loss=0.1992 | lr=1.459e-05 | grad_norm=0.2795 | tok_per_s=724 | mem_gb=3.14
+23:53:59 | lora4 | [1050/1250] sft_loss=0.2448 | lr=1.327e-05 | grad_norm=0.3036 | tok_per_s=769.8 | mem_gb=3.14
+23:55:13 | lora4 | [1060/1250] sft_loss=0.1822 | lr=1.201e-05 | grad_norm=0.2741 | tok_per_s=889.6 | mem_gb=3.14
+23:56:29 | lora4 | [1070/1250] sft_loss=0.2537 | lr=1.081e-05 | grad_norm=0.3309 | tok_per_s=748.3 | mem_gb=3.14
+23:57:44 | lora4 | [1080/1250] sft_loss=0.1902 | lr=9.664e-06 | grad_norm=0.2695 | tok_per_s=755.9 | mem_gb=3.14
+23:58:59 | lora4 | [1090/1250] sft_loss=0.2196 | lr=8.582e-06 | grad_norm=0.2951 | tok_per_s=666.9 | mem_gb=3.14
+00:00:12 | lora4 | [1100/1250] sft_loss=0.2289 | lr=7.563e-06 | grad_norm=0.3175 | tok_per_s=728.2 | mem_gb=3.14
+00:01:26 | lora4 | [1110/1250] sft_loss=0.1982 | lr=6.605e-06 | grad_norm=0.349 | tok_per_s=690.2 | mem_gb=3.14
+00:02:38 | lora4 | [1120/1250] sft_loss=0.183 | lr=5.71e-06 | grad_norm=0.2693 | tok_per_s=754.8 | mem_gb=3.14
+00:03:53 | lora4 | [1130/1250] sft_loss=0.1911 | lr=4.878e-06 | grad_norm=0.2693 | tok_per_s=777.9 | mem_gb=3.14
+00:05:09 | lora4 | [1140/1250] sft_loss=0.201 | lr=4.111e-06 | grad_norm=0.2368 | tok_per_s=908.8 | mem_gb=3.14
+00:06:23 | lora4 | [1150/1250] sft_loss=0.1817 | lr=3.407e-06 | grad_norm=0.2742 | tok_per_s=746.8 | mem_gb=3.14
+00:07:36 | lora4 | [1160/1250] sft_loss=0.2323 | lr=2.769e-06 | grad_norm=0.2756 | tok_per_s=756.7 | mem_gb=3.14
+00:08:49 | lora4 | [1170/1250] sft_loss=0.1795 | lr=2.196e-06 | grad_norm=0.2553 | tok_per_s=768.5 | mem_gb=3.14
+00:10:01 | lora4 | [1180/1250] sft_loss=0.2023 | lr=1.689e-06 | grad_norm=0.2686 | tok_per_s=813.6 | mem_gb=3.14
+00:11:15 | lora4 | [1190/1250] sft_loss=0.2479 | lr=1.247e-06 | grad_norm=0.2681 | tok_per_s=822.8 | mem_gb=3.14
+00:12:30 | lora4 | [1200/1250] sft_loss=0.1919 | lr=8.725e-07 | grad_norm=0.2868 | tok_per_s=741.9 | mem_gb=3.14
+00:13:45 | lora4 | [1210/1250] sft_loss=0.183 | lr=5.642e-07 | grad_norm=0.2921 | tok_per_s=795.9 | mem_gb=3.14
+00:14:57 | lora4 | [1220/1250] sft_loss=0.1915 | lr=3.227e-07 | grad_norm=0.2846 | tok_per_s=762.1 | mem_gb=3.14
+00:16:10 | lora4 | [1230/1250] sft_loss=0.2035 | lr=1.481e-07 | grad_norm=0.2553 | tok_per_s=839.4 | mem_gb=3.14
+00:17:24 | lora4 | [1240/1250] sft_loss=0.2307 | lr=4.065e-08 | grad_norm=0.2907 | tok_per_s=784.4 | mem_gb=3.14
+00:18:39 | lora4 | [1250/1250] sft_loss=0.1921 | lr=3.359e-10 | grad_norm=0.2809 | tok_per_s=717.1 | mem_gb=3.14
+00:18:39 | lora4 | recovery checkpoint u1250 saved (0.03 GB)
+00:18:55 | lora4 | merged vs unmerged logits: {'max_abs_diff': 0.21875, 'mean_abs_diff': 0.007080761715769768, 'argmax_agreement': 0.9973822236061096}
+00:18:56 | lora4 | [lora4_final] gsm8k_cot (generation)
+00:57:39 | lora4 | [lora4_final] gsm8k flexible=0.5883 strict=0.0000
+00:57:39 | lora4 | [lora4_final] hellaswag / boolq / arc_easy (likelihood)
+10:42:28 | lora4 | env: {'torch': '2.11.0+cu130', 'cuda': True, 'gpu': 'Tesla T4', 'gpu_mem_gb': 14.56, 'transformers': '4.57.1', 'lm_eval': '0.4.9.1', 'math_verify': 'unknown', 'datasets': '3.6.0'}
+10:42:29 | lora4 | adapter and training summary found, skipping training for lora4
+10:42:32 | lora4 | [lora4_final] rebuilt gsm8k scores from saved samples: {'gsm8k_flexible_em': 0.5883244882486732, 'gsm8k_strict_em': 0.0, 'gsm8k_extractable_rate': 1.0, 'gsm8k_truncated_rate': 0.011372251705837756}
+10:42:32 | lora4 | [lora4_final] gsm8k reused from earlier run: flexible=0.5883
+10:42:32 | lora4 | [lora4_final] hellaswag / boolq / arc_easy (likelihood)
+10:55:14 | lora4 | [lora4_final] scores: {'gsm8k_flexible_em': 0.5883, 'gsm8k_strict_em': 0.0, 'gsm8k_extractable_rate': 1.0, 'gsm8k_truncated_rate': 0.0114, 'hellaswag_acc': 0.3775, 'hellaswag_acc_norm': 0.4735, 'boolq_acc': 0.7003, 'arc_easy_acc': 0.6524, 'arc_easy_acc_norm': 0.6271, 'eval_seconds_benchmarks': 761.7694}
+10:55:55 | lora4 | qualitative: 24 responses, 1 truncated

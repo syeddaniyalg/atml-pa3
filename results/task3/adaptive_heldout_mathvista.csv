@@ -1,0 +1,12 @@
+dataset,policy,accuracy,tokens,rollouts,accuracy_lo,accuracy_hi
+mathvista,fixed32,0.63925,8897.7575,32.0,,
+mathvista,agreement,0.63025,2919.400125,8.391,,
+mathvista,quality,0.634,3279.706,9.568,,
+mathvista,fixed_sc_N1,0.544875,277.796375,1.0,,
+mathvista,fixed_sc_N2,0.544875,551.250125,2.0,,
+mathvista,fixed_sc_N4,0.589375,1111.591625,4.0,,
+mathvista,fixed_sc_N8,0.61375,2229.902,8.0,,
+mathvista,fixed_sc_N16,0.627,4461.8425,16.0,,
+mathvista,fixed_sc_N32,0.63925,8897.7575,32.0,,
+mathvista,agreement_minus_fixed32,-0.008999999999999998,-5978.357375,-23.609,-0.019749999999999997,0.0021281249999999994
+mathvista,quality_minus_fixed32,-0.0052499999999999995,-5618.0515,-22.432,-0.014999999999999998,0.004375000000000001

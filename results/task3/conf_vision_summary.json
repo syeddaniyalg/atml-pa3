@@ -1,0 +1,8 @@
+{
+  "mean_per_rollout_corr": -0.21066807401833634,
+  "median_question_corr": -0.21154463296936793,
+  "fraction_questions_negative": 0.89375,
+  "fraction_rollouts_negative": 0.8519140625,
+  "rollout_level_spearman_C_vs_V_mean": -0.33950735218878814,
+  "identity_max_abs_error_Ztoken_minus_Z_vs_cov": 2.329820121549364e-10
+}

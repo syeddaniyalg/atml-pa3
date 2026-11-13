@@ -1,0 +1,12 @@
+{
+  "rows": 32000,
+  "questions": 1000,
+  "tokens_total": 8961703,
+  "alignment": "logp/kl/token-id lengths equal for all rollouts",
+  "attention_alignment": "attention list lengths equal generated token counts",
+  "gold_mismatch_with_metadata": 525,
+  "accuracy_first_rollout": 0.541,
+  "accuracy_all_rollouts": 0.5446875,
+  "no_answer_rate": 0.09475,
+  "capped_rate": 0.01521875
+}

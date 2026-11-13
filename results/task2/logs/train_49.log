@@ -1,0 +1,206 @@
+13:58:01 | task2-train-49 | env: {'torch': '2.14.1+cu130', 'cuda': True, 'gpu': 'Tesla T4', 'gpu_mem_gb': 14.56, 'transformers': '4.57.1', 'lm_eval': '0.4.9.1', 'math_verify': 'unknown', 'datasets': '3.6.0'}
+13:58:17 | task2-train-49 | calibration: {'rule': 'scale = mean L2 norm of text-token embeddings / mean L2 norm of initial connector outputs, measured on 64 training captions', 'text_norm': 0.8338052034378052, 'connector_norm_before': 15.958642959594727, 'scale': 0.052247876310592}
+13:58:32 | task2-train-49 | dev@0: caption_loss=4.838 | grounding_nll_correct=6.425 | grounding_nll_complementary=6.347 | grounding_nll_none=7.935 | grounding_swap_penalty=-0.07764 | grounding_noimg_penalty=1.51 | grounding_acc_correct=0.02083 | natural_nll_correct=6.31 | natural_nll_complementary=6.524 | natural_nll_none=5.968 | natural_swap_penalty=0.214 | natural_noimg_penalty=-0.3413 | natural_acc_correct=0.03125
+13:58:32 | task2-train-49 | stage caption: 2250 updates, trainable={'connector': 1837056, 'lora': 0}
+13:58:33 | task2-train-49 | sanity: {'shapes': {'feature': [196, 768], 'connector_out': [49, 1024]}, 'backbone_frozen': True, 'connector_grad_norm_first_update': nan, 'backbone_grads_none': True}
+13:58:48 | task2-train-49 | [25/4500] stage=caption | loss=4.773 | lr=0.0002232 | gnorm=8.447 | mem=1.429
+13:59:03 | task2-train-49 | [50/4500] stage=caption | loss=3.884 | lr=0.0004464 | gnorm=2.559 | mem=1.429
+13:59:18 | task2-train-49 | [75/4500] stage=caption | loss=3.079 | lr=0.0006696 | gnorm=2.313 | mem=1.429
+13:59:34 | task2-train-49 | [100/4500] stage=caption | loss=3.261 | lr=0.0008929 | gnorm=1.641 | mem=1.429
+13:59:49 | task2-train-49 | [125/4500] stage=caption | loss=3.423 | lr=0.0009999 | gnorm=1.105 | mem=1.429
+14:00:04 | task2-train-49 | [150/4500] stage=caption | loss=3.279 | lr=0.0009993 | gnorm=1.188 | mem=1.429
+14:00:20 | task2-train-49 | [175/4500] stage=caption | loss=3.208 | lr=0.0009981 | gnorm=0.867 | mem=1.429
+14:00:35 | task2-train-49 | [200/4500] stage=caption | loss=3.059 | lr=0.0009963 | gnorm=0.8799 | mem=1.429
+14:00:50 | task2-train-49 | [225/4500] stage=caption | loss=2.936 | lr=0.0009939 | gnorm=1.018 | mem=1.429
+14:01:05 | task2-train-49 | [250/4500] stage=caption | loss=2.727 | lr=0.0009909 | gnorm=0.7376 | mem=1.429
+14:01:20 | task2-train-49 | [275/4500] stage=caption | loss=3.909 | lr=0.0009873 | gnorm=2.006 | mem=1.429
+14:01:35 | task2-train-49 | [300/4500] stage=caption | loss=2.912 | lr=0.0009831 | gnorm=0.9216 | mem=1.429
+14:01:50 | task2-train-49 | [325/4500] stage=caption | loss=3.057 | lr=0.0009783 | gnorm=1.052 | mem=1.429
+14:02:05 | task2-train-49 | [350/4500] stage=caption | loss=2.543 | lr=0.000973 | gnorm=0.8086 | mem=1.45
+14:02:19 | task2-train-49 | [375/4500] stage=caption | loss=2.729 | lr=0.0009671 | gnorm=0.8188 | mem=1.45
+14:02:34 | task2-train-49 | [400/4500] stage=caption | loss=2.537 | lr=0.0009606 | gnorm=0.8043 | mem=1.45
+14:02:49 | task2-train-49 | [425/4500] stage=caption | loss=3.237 | lr=0.0009535 | gnorm=0.7789 | mem=1.45
+14:03:03 | task2-train-49 | [450/4500] stage=caption | loss=2.665 | lr=0.0009459 | gnorm=0.7939 | mem=1.45
+14:03:18 | task2-train-49 | [475/4500] stage=caption | loss=2.739 | lr=0.0009378 | gnorm=0.7106 | mem=1.45
+14:03:33 | task2-train-49 | [500/4500] stage=caption | loss=2.375 | lr=0.0009292 | gnorm=0.7023 | mem=1.45
+14:03:38 | task2-train-49 | dev@500: caption_loss=2.581 | grounding_nll_correct=4.661 | grounding_nll_complementary=5.025 | grounding_nll_none=7.935 | grounding_swap_penalty=0.3638 | grounding_noimg_penalty=3.274 | grounding_acc_correct=0.02083 | natural_nll_correct=3.298 | natural_nll_complementary=3.525 | natural_nll_none=5.968 | natural_swap_penalty=0.2268 | natural_noimg_penalty=2.67 | natural_acc_correct=0.2469
+14:03:53 | task2-train-49 | [525/4500] stage=caption | loss=2.341 | lr=0.00092 | gnorm=0.6214 | mem=1.45
+14:04:07 | task2-train-49 | [550/4500] stage=caption | loss=2.89 | lr=0.0009104 | gnorm=0.8226 | mem=1.45
+14:04:22 | task2-train-49 | [575/4500] stage=caption | loss=2.805 | lr=0.0009002 | gnorm=0.8092 | mem=1.45
+14:04:36 | task2-train-49 | [600/4500] stage=caption | loss=2.351 | lr=0.0008896 | gnorm=0.5712 | mem=1.45
+14:04:50 | task2-train-49 | [625/4500] stage=caption | loss=2.867 | lr=0.0008785 | gnorm=0.6759 | mem=1.45
+14:05:05 | task2-train-49 | [650/4500] stage=caption | loss=2.47 | lr=0.000867 | gnorm=0.7101 | mem=1.45
+14:05:19 | task2-train-49 | [675/4500] stage=caption | loss=2.844 | lr=0.0008551 | gnorm=0.5684 | mem=1.45
+14:05:34 | task2-train-49 | [700/4500] stage=caption | loss=2.967 | lr=0.0008427 | gnorm=0.7003 | mem=1.45
+14:05:48 | task2-train-49 | [725/4500] stage=caption | loss=2.895 | lr=0.00083 | gnorm=0.9893 | mem=1.45
+14:06:02 | task2-train-49 | [750/4500] stage=caption | loss=2.37 | lr=0.0008169 | gnorm=0.7044 | mem=1.45
+14:06:17 | task2-train-49 | [775/4500] stage=caption | loss=2.58 | lr=0.0008034 | gnorm=0.787 | mem=1.45
+14:06:31 | task2-train-49 | [800/4500] stage=caption | loss=2.294 | lr=0.0007895 | gnorm=0.6242 | mem=1.45
+14:06:45 | task2-train-49 | [825/4500] stage=caption | loss=2.088 | lr=0.0007754 | gnorm=0.7399 | mem=1.45
+14:06:59 | task2-train-49 | [850/4500] stage=caption | loss=2.554 | lr=0.0007609 | gnorm=0.6544 | mem=1.45
+14:07:14 | task2-train-49 | [875/4500] stage=caption | loss=2.557 | lr=0.0007462 | gnorm=0.6874 | mem=1.45
+14:07:29 | task2-train-49 | [900/4500] stage=caption | loss=2.313 | lr=0.0007312 | gnorm=0.6174 | mem=1.45
+14:07:43 | task2-train-49 | [925/4500] stage=caption | loss=2.652 | lr=0.0007159 | gnorm=0.6267 | mem=1.45
+14:07:57 | task2-train-49 | [950/4500] stage=caption | loss=2.434 | lr=0.0007005 | gnorm=0.6693 | mem=1.45
+14:08:12 | task2-train-49 | [975/4500] stage=caption | loss=2.271 | lr=0.0006848 | gnorm=0.6095 | mem=1.45
+14:08:26 | task2-train-49 | [1000/4500] stage=caption | loss=2.415 | lr=0.0006689 | gnorm=0.5784 | mem=1.45
+14:08:32 | task2-train-49 | dev@1000: caption_loss=2.381 | grounding_nll_correct=5.229 | grounding_nll_complementary=6.187 | grounding_nll_none=7.935 | grounding_swap_penalty=0.9585 | grounding_noimg_penalty=2.706 | grounding_acc_correct=0 | natural_nll_correct=3.908 | natural_nll_complementary=4.174 | natural_nll_none=5.968 | natural_swap_penalty=0.2657 | natural_noimg_penalty=2.06 | natural_acc_correct=0.1594
+14:08:48 | task2-train-49 | [1025/4500] stage=caption | loss=2.94 | lr=0.0006529 | gnorm=0.6174 | mem=1.45
+14:09:02 | task2-train-49 | [1050/4500] stage=caption | loss=2.471 | lr=0.0006367 | gnorm=0.6369 | mem=1.45
+14:09:17 | task2-train-49 | [1075/4500] stage=caption | loss=2.849 | lr=0.0006205 | gnorm=0.6564 | mem=1.45
+14:09:31 | task2-train-49 | [1100/4500] stage=caption | loss=2.691 | lr=0.0006041 | gnorm=0.8582 | mem=1.45
+14:09:45 | task2-train-49 | [1125/4500] stage=caption | loss=2.606 | lr=0.0005876 | gnorm=0.6093 | mem=1.462
+14:10:00 | task2-train-49 | [1150/4500] stage=caption | loss=2.261 | lr=0.0005712 | gnorm=0.7393 | mem=1.462
+14:10:15 | task2-train-49 | [1175/4500] stage=caption | loss=2.732 | lr=0.0005546 | gnorm=0.6988 | mem=1.462
+14:10:29 | task2-train-49 | [1200/4500] stage=caption | loss=2.424 | lr=0.0005381 | gnorm=0.7553 | mem=1.493
+14:10:43 | task2-train-49 | [1225/4500] stage=caption | loss=2.894 | lr=0.0005216 | gnorm=0.6553 | mem=1.493
+14:10:58 | task2-train-49 | [1250/4500] stage=caption | loss=2.3 | lr=0.0005051 | gnorm=0.8229 | mem=1.493
+14:11:13 | task2-train-49 | [1275/4500] stage=caption | loss=2.437 | lr=0.0004887 | gnorm=0.7665 | mem=1.493
+14:11:27 | task2-train-49 | [1300/4500] stage=caption | loss=2.34 | lr=0.0004724 | gnorm=0.7004 | mem=1.493
+14:11:41 | task2-train-49 | [1325/4500] stage=caption | loss=2.53 | lr=0.0004561 | gnorm=0.7601 | mem=1.493
+14:11:56 | task2-train-49 | [1350/4500] stage=caption | loss=2.457 | lr=0.00044 | gnorm=0.8321 | mem=1.493
+14:12:10 | task2-train-49 | [1375/4500] stage=caption | loss=2.267 | lr=0.0004241 | gnorm=0.832 | mem=1.493
+14:12:25 | task2-train-49 | [1400/4500] stage=caption | loss=2.431 | lr=0.0004083 | gnorm=0.685 | mem=1.493
+14:12:39 | task2-train-49 | [1425/4500] stage=caption | loss=2.319 | lr=0.0003927 | gnorm=0.7103 | mem=1.493
+14:12:53 | task2-train-49 | [1450/4500] stage=caption | loss=2.795 | lr=0.0003773 | gnorm=0.7583 | mem=1.493
+14:13:07 | task2-train-49 | [1475/4500] stage=caption | loss=2.593 | lr=0.0003622 | gnorm=0.8339 | mem=1.493
+14:13:21 | task2-train-49 | [1500/4500] stage=caption | loss=2.536 | lr=0.0003473 | gnorm=0.7242 | mem=1.493
+14:13:27 | task2-train-49 | dev@1500: caption_loss=2.311 | grounding_nll_correct=3.953 | grounding_nll_complementary=5.176 | grounding_nll_none=7.935 | grounding_swap_penalty=1.223 | grounding_noimg_penalty=3.982 | grounding_acc_correct=0.08333 | natural_nll_correct=3.282 | natural_nll_complementary=3.593 | natural_nll_none=5.968 | natural_swap_penalty=0.3108 | natural_noimg_penalty=2.686 | natural_acc_correct=0.1953
+14:13:41 | task2-train-49 | [1525/4500] stage=caption | loss=2.591 | lr=0.0003327 | gnorm=0.646 | mem=1.493
+14:13:55 | task2-train-49 | [1550/4500] stage=caption | loss=2.405 | lr=0.0003184 | gnorm=0.6959 | mem=1.493
+14:14:09 | task2-train-49 | [1575/4500] stage=caption | loss=2.613 | lr=0.0003043 | gnorm=0.9249 | mem=1.493
+14:14:23 | task2-train-49 | [1600/4500] stage=caption | loss=2.542 | lr=0.0002907 | gnorm=0.9281 | mem=1.493
+14:14:37 | task2-train-49 | [1625/4500] stage=caption | loss=2.309 | lr=0.0002773 | gnorm=0.67 | mem=1.493
+14:14:52 | task2-train-49 | [1650/4500] stage=caption | loss=2.281 | lr=0.0002644 | gnorm=0.8255 | mem=1.493
+14:15:06 | task2-train-49 | [1675/4500] stage=caption | loss=2.149 | lr=0.0002518 | gnorm=0.7816 | mem=1.493
+14:15:20 | task2-train-49 | [1700/4500] stage=caption | loss=2.239 | lr=0.0002396 | gnorm=0.7345 | mem=1.493
+14:15:35 | task2-train-49 | [1725/4500] stage=caption | loss=2.464 | lr=0.0002279 | gnorm=0.7107 | mem=1.493
+14:15:49 | task2-train-49 | [1750/4500] stage=caption | loss=2.175 | lr=0.0002165 | gnorm=0.6289 | mem=1.493
+14:16:04 | task2-train-49 | [1775/4500] stage=caption | loss=2.367 | lr=0.0002057 | gnorm=0.7272 | mem=1.493
+14:16:18 | task2-train-49 | [1800/4500] stage=caption | loss=2.263 | lr=0.0001953 | gnorm=0.7215 | mem=1.493
+14:16:32 | task2-train-49 | [1825/4500] stage=caption | loss=2.495 | lr=0.0001853 | gnorm=0.7598 | mem=1.493
+14:16:46 | task2-train-49 | [1850/4500] stage=caption | loss=2.298 | lr=0.0001759 | gnorm=1.135 | mem=1.493
+14:17:00 | task2-train-49 | [1875/4500] stage=caption | loss=2.529 | lr=0.000167 | gnorm=0.7282 | mem=1.493
+14:17:14 | task2-train-49 | [1900/4500] stage=caption | loss=1.864 | lr=0.0001585 | gnorm=0.7169 | mem=1.493
+14:17:28 | task2-train-49 | [1925/4500] stage=caption | loss=2.204 | lr=0.0001507 | gnorm=0.7439 | mem=1.493
+14:17:42 | task2-train-49 | [1950/4500] stage=caption | loss=2.021 | lr=0.0001433 | gnorm=0.5897 | mem=1.493
+14:17:56 | task2-train-49 | [1975/4500] stage=caption | loss=2.281 | lr=0.0001365 | gnorm=0.7839 | mem=1.493
+14:18:10 | task2-train-49 | [2000/4500] stage=caption | loss=2.183 | lr=0.0001303 | gnorm=0.7226 | mem=1.493
+14:18:16 | task2-train-49 | dev@2000: caption_loss=2.283 | grounding_nll_correct=4.248 | grounding_nll_complementary=5.466 | grounding_nll_none=7.935 | grounding_swap_penalty=1.218 | grounding_noimg_penalty=3.687 | grounding_acc_correct=0.0625 | natural_nll_correct=3.417 | natural_nll_complementary=3.722 | natural_nll_none=5.968 | natural_swap_penalty=0.3047 | natural_noimg_penalty=2.551 | natural_acc_correct=0.1953
+14:18:31 | task2-train-49 | [2025/4500] stage=caption | loss=2.38 | lr=0.0001246 | gnorm=0.7789 | mem=1.493
+14:18:45 | task2-train-49 | [2050/4500] stage=caption | loss=2.171 | lr=0.0001195 | gnorm=0.6257 | mem=1.493
+14:18:59 | task2-train-49 | [2075/4500] stage=caption | loss=2.43 | lr=0.000115 | gnorm=0.77 | mem=1.493
+14:19:13 | task2-train-49 | [2100/4500] stage=caption | loss=2.756 | lr=0.000111 | gnorm=0.7862 | mem=1.493
+14:19:27 | task2-train-49 | [2125/4500] stage=caption | loss=2.323 | lr=0.0001077 | gnorm=0.7594 | mem=1.493
+14:19:41 | task2-train-49 | [2150/4500] stage=caption | loss=2.051 | lr=0.0001049 | gnorm=0.8278 | mem=1.493
+14:19:55 | task2-train-49 | [2175/4500] stage=caption | loss=2.625 | lr=0.0001028 | gnorm=0.8606 | mem=1.493
+14:20:09 | task2-train-49 | [2200/4500] stage=caption | loss=2.335 | lr=0.0001013 | gnorm=0.887 | mem=1.493
+14:20:24 | task2-train-49 | [2225/4500] stage=caption | loss=2.597 | lr=0.0001003 | gnorm=0.8313 | mem=1.493
+14:20:39 | task2-train-49 | [2250/4500] stage=caption | loss=2.39 | lr=0.0001 | gnorm=0.7466 | mem=1.493
+14:20:45 | task2-train-49 | dev@2250: caption_loss=2.279 | grounding_nll_correct=4.5 | grounding_nll_complementary=5.598 | grounding_nll_none=7.935 | grounding_swap_penalty=1.098 | grounding_noimg_penalty=3.435 | grounding_acc_correct=0.08333 | natural_nll_correct=3.569 | natural_nll_complementary=3.851 | natural_nll_none=5.968 | natural_swap_penalty=0.2818 | natural_noimg_penalty=2.399 | natural_acc_correct=0.2109
+14:20:45 | task2-train-49 | stage vit: 1500 updates, trainable={'connector': 1837056, 'lora': 4587520}
+14:21:06 | task2-train-49 | [2275/4500] stage=vit | loss=1.109 | lr=3.333e-05 | gnorm=9.528 | mem=1.384
+14:21:28 | task2-train-49 | [2300/4500] stage=vit | loss=1.187 | lr=6.667e-05 | gnorm=7.95 | mem=1.384
+14:21:50 | task2-train-49 | [2325/4500] stage=vit | loss=1.26 | lr=0.0001 | gnorm=3.804 | mem=1.431
+14:22:11 | task2-train-49 | [2350/4500] stage=vit | loss=1.067 | lr=9.994e-05 | gnorm=2.276 | mem=1.434
+14:22:31 | task2-train-49 | [2375/4500] stage=vit | loss=0.5065 | lr=9.974e-05 | gnorm=6.702 | mem=1.434
+14:22:53 | task2-train-49 | [2400/4500] stage=vit | loss=0.661 | lr=9.94e-05 | gnorm=5.431 | mem=1.434
+14:23:13 | task2-train-49 | [2425/4500] stage=vit | loss=1.548 | lr=9.893e-05 | gnorm=4.262 | mem=1.434
+14:23:35 | task2-train-49 | [2450/4500] stage=vit | loss=0.5778 | lr=9.833e-05 | gnorm=2.112 | mem=1.45
+14:23:55 | task2-train-49 | [2475/4500] stage=vit | loss=0.6374 | lr=9.759e-05 | gnorm=6.662 | mem=1.45
+14:24:17 | task2-train-49 | [2500/4500] stage=vit | loss=0.6202 | lr=9.673e-05 | gnorm=2.373 | mem=1.45
+14:24:23 | task2-train-49 | dev@2500: caption_loss=2.272 | grounding_nll_correct=1.052 | grounding_nll_complementary=3.697 | grounding_nll_none=2.743 | grounding_swap_penalty=2.645 | grounding_noimg_penalty=1.691 | grounding_acc_correct=0.625 | natural_nll_correct=1.714 | natural_nll_complementary=2.341 | natural_nll_none=3.02 | natural_swap_penalty=0.627 | natural_noimg_penalty=1.306 | natural_acc_correct=0.5437
+14:24:46 | task2-train-49 | [2525/4500] stage=vit | loss=0.5401 | lr=9.574e-05 | gnorm=15.83 | mem=1.471
+14:25:06 | task2-train-49 | [2550/4500] stage=vit | loss=0.6596 | lr=9.462e-05 | gnorm=2.572 | mem=1.471
+14:25:28 | task2-train-49 | [2575/4500] stage=vit | loss=1.031 | lr=9.339e-05 | gnorm=5.826 | mem=1.471
+14:25:50 | task2-train-49 | [2600/4500] stage=vit | loss=1.013 | lr=9.204e-05 | gnorm=3.469 | mem=1.471
+14:26:11 | task2-train-49 | [2625/4500] stage=vit | loss=0.6524 | lr=9.057e-05 | gnorm=1.947 | mem=1.471
+14:26:32 | task2-train-49 | [2650/4500] stage=vit | loss=0.5255 | lr=8.9e-05 | gnorm=2.308 | mem=1.471
+14:26:53 | task2-train-49 | [2675/4500] stage=vit | loss=0.1781 | lr=8.732e-05 | gnorm=5.942 | mem=1.471
+14:27:14 | task2-train-49 | [2700/4500] stage=vit | loss=0.2744 | lr=8.555e-05 | gnorm=3.62 | mem=1.471
+14:27:36 | task2-train-49 | [2725/4500] stage=vit | loss=1.202 | lr=8.368e-05 | gnorm=3.408 | mem=1.471
+14:27:57 | task2-train-49 | [2750/4500] stage=vit | loss=0.9773 | lr=8.173e-05 | gnorm=3.518 | mem=1.471
+14:28:20 | task2-train-49 | [2775/4500] stage=vit | loss=0.02552 | lr=7.97e-05 | gnorm=2.858 | mem=1.471
+14:28:42 | task2-train-49 | [2800/4500] stage=vit | loss=0.3025 | lr=7.759e-05 | gnorm=5.369 | mem=1.471
+14:29:03 | task2-train-49 | [2825/4500] stage=vit | loss=0.1595 | lr=7.541e-05 | gnorm=4.303 | mem=1.471
+14:29:24 | task2-train-49 | [2850/4500] stage=vit | loss=0.8935 | lr=7.317e-05 | gnorm=4.062 | mem=1.471
+14:29:45 | task2-train-49 | [2875/4500] stage=vit | loss=0.6405 | lr=7.087e-05 | gnorm=2.637 | mem=1.471
+14:30:06 | task2-train-49 | [2900/4500] stage=vit | loss=0.4257 | lr=6.853e-05 | gnorm=2.045 | mem=1.471
+14:30:27 | task2-train-49 | [2925/4500] stage=vit | loss=0.582 | lr=6.614e-05 | gnorm=6.006 | mem=1.471
+14:30:50 | task2-train-49 | [2950/4500] stage=vit | loss=0.4915 | lr=6.372e-05 | gnorm=1.293 | mem=1.471
+14:31:10 | task2-train-49 | [2975/4500] stage=vit | loss=0.7202 | lr=6.128e-05 | gnorm=1.717 | mem=1.471
+14:31:31 | task2-train-49 | [3000/4500] stage=vit | loss=0.5431 | lr=5.881e-05 | gnorm=1.77 | mem=1.471
+14:31:37 | task2-train-49 | dev@3000: caption_loss=2.252 | grounding_nll_correct=1.664 | grounding_nll_complementary=6.121 | grounding_nll_none=3.959 | grounding_swap_penalty=4.456 | grounding_noimg_penalty=2.294 | grounding_acc_correct=0.5833 | natural_nll_correct=1.96 | natural_nll_complementary=3.272 | natural_nll_none=3.279 | natural_swap_penalty=1.312 | natural_noimg_penalty=1.319 | natural_acc_correct=0.4906
+14:32:00 | task2-train-49 | [3025/4500] stage=vit | loss=0.4584 | lr=5.634e-05 | gnorm=2.128 | mem=1.471
+14:32:20 | task2-train-49 | [3050/4500] stage=vit | loss=0.4695 | lr=5.386e-05 | gnorm=3.592 | mem=1.471
+14:32:42 | task2-train-49 | [3075/4500] stage=vit | loss=0.8563 | lr=5.138e-05 | gnorm=1.826 | mem=1.471
+14:33:03 | task2-train-49 | [3100/4500] stage=vit | loss=0.2671 | lr=4.892e-05 | gnorm=1.139 | mem=1.471
+14:33:24 | task2-train-49 | [3125/4500] stage=vit | loss=0.4398 | lr=4.647e-05 | gnorm=6.778 | mem=1.471
+14:33:44 | task2-train-49 | [3150/4500] stage=vit | loss=0.4797 | lr=4.405e-05 | gnorm=1.474 | mem=1.471
+14:34:06 | task2-train-49 | [3175/4500] stage=vit | loss=1.538 | lr=4.166e-05 | gnorm=7.277 | mem=1.471
+14:34:26 | task2-train-49 | [3200/4500] stage=vit | loss=0.05803 | lr=3.931e-05 | gnorm=2.741 | mem=1.471
+14:34:48 | task2-train-49 | [3225/4500] stage=vit | loss=0.4902 | lr=3.701e-05 | gnorm=2.498 | mem=1.471
+14:35:08 | task2-train-49 | [3250/4500] stage=vit | loss=0.4727 | lr=3.477e-05 | gnorm=1.51 | mem=1.471
+14:35:32 | task2-train-49 | [3275/4500] stage=vit | loss=0.6714 | lr=3.259e-05 | gnorm=1.359 | mem=1.471
+14:35:52 | task2-train-49 | [3300/4500] stage=vit | loss=0.8846 | lr=3.047e-05 | gnorm=7.647 | mem=1.471
+14:36:13 | task2-train-49 | [3325/4500] stage=vit | loss=0.2314 | lr=2.843e-05 | gnorm=0.8582 | mem=1.471
+14:36:34 | task2-train-49 | [3350/4500] stage=vit | loss=0.4478 | lr=2.647e-05 | gnorm=1.737 | mem=1.471
+14:36:56 | task2-train-49 | [3375/4500] stage=vit | loss=1.15 | lr=2.46e-05 | gnorm=11.2 | mem=1.471
+14:37:16 | task2-train-49 | [3400/4500] stage=vit | loss=0.8677 | lr=2.281e-05 | gnorm=6.978 | mem=1.471
+14:37:38 | task2-train-49 | [3425/4500] stage=vit | loss=0.3212 | lr=2.113e-05 | gnorm=8.172 | mem=1.471
+14:37:58 | task2-train-49 | [3450/4500] stage=vit | loss=0.8692 | lr=1.955e-05 | gnorm=1.884 | mem=1.471
+14:38:19 | task2-train-49 | [3475/4500] stage=vit | loss=0.4069 | lr=1.808e-05 | gnorm=6.155 | mem=1.471
+14:38:39 | task2-train-49 | [3500/4500] stage=vit | loss=0.01918 | lr=1.672e-05 | gnorm=1.695 | mem=1.471
+14:38:46 | task2-train-49 | dev@3500: caption_loss=2.235 | grounding_nll_correct=2.157 | grounding_nll_complementary=6.521 | grounding_nll_none=3.898 | grounding_swap_penalty=4.364 | grounding_noimg_penalty=1.741 | grounding_acc_correct=0.6042 | natural_nll_correct=2.191 | natural_nll_complementary=3.495 | natural_nll_none=3.24 | natural_swap_penalty=1.304 | natural_noimg_penalty=1.049 | natural_acc_correct=0.5156
+14:39:09 | task2-train-49 | [3525/4500] stage=vit | loss=0.2629 | lr=1.547e-05 | gnorm=1.311 | mem=1.471
+14:39:31 | task2-train-49 | [3550/4500] stage=vit | loss=0.6839 | lr=1.435e-05 | gnorm=1.817 | mem=1.471
+14:39:51 | task2-train-49 | [3575/4500] stage=vit | loss=0.2847 | lr=1.335e-05 | gnorm=0.929 | mem=1.471
+14:40:12 | task2-train-49 | [3600/4500] stage=vit | loss=0.1657 | lr=1.247e-05 | gnorm=0.7583 | mem=1.471
+14:40:34 | task2-train-49 | [3625/4500] stage=vit | loss=0.2321 | lr=1.173e-05 | gnorm=1.063 | mem=1.471
+14:40:56 | task2-train-49 | [3650/4500] stage=vit | loss=0.8747 | lr=1.111e-05 | gnorm=12.73 | mem=1.471
+14:41:16 | task2-train-49 | [3675/4500] stage=vit | loss=0.3358 | lr=1.063e-05 | gnorm=2.487 | mem=1.471
+14:41:38 | task2-train-49 | [3700/4500] stage=vit | loss=1.324 | lr=1.028e-05 | gnorm=2.433 | mem=1.471
+14:41:59 | task2-train-49 | [3725/4500] stage=vit | loss=0.001704 | lr=1.007e-05 | gnorm=0.1995 | mem=1.471
+14:42:20 | task2-train-49 | [3750/4500] stage=vit | loss=0.9507 | lr=1e-05 | gnorm=3.394 | mem=1.471
+14:42:26 | task2-train-49 | dev@3750: caption_loss=2.229 | grounding_nll_correct=2.206 | grounding_nll_complementary=6.652 | grounding_nll_none=3.932 | grounding_swap_penalty=4.446 | grounding_noimg_penalty=1.726 | grounding_acc_correct=0.6042 | natural_nll_correct=2.263 | natural_nll_complementary=3.571 | natural_nll_none=3.217 | natural_swap_penalty=1.308 | natural_noimg_penalty=0.9546 | natural_acc_correct=0.5
+14:42:27 | task2-train-49 | stage natural: 750 updates, trainable={'connector': 1837056, 'lora': 4587520}
+14:42:50 | task2-train-49 | [3775/4500] stage=natural | loss=0.8952 | lr=3.289e-05 | gnorm=8.703 | mem=1.399
+14:43:13 | task2-train-49 | [3800/4500] stage=natural | loss=0.4303 | lr=4.997e-05 | gnorm=6.378 | mem=1.399
+14:43:34 | task2-train-49 | [3825/4500] stage=natural | loss=0.3882 | lr=4.972e-05 | gnorm=7.054 | mem=1.399
+14:43:56 | task2-train-49 | [3850/4500] stage=natural | loss=0.7346 | lr=4.919e-05 | gnorm=5.175 | mem=1.399
+14:44:17 | task2-train-49 | [3875/4500] stage=natural | loss=0.3993 | lr=4.84e-05 | gnorm=3.512 | mem=1.399
+14:44:39 | task2-train-49 | [3900/4500] stage=natural | loss=0.345 | lr=4.735e-05 | gnorm=4.836 | mem=1.399
+14:45:00 | task2-train-49 | [3925/4500] stage=natural | loss=1.059 | lr=4.607e-05 | gnorm=4.548 | mem=1.399
+14:45:22 | task2-train-49 | [3950/4500] stage=natural | loss=0.896 | lr=4.456e-05 | gnorm=5.202 | mem=1.399
+14:45:43 | task2-train-49 | [3975/4500] stage=natural | loss=0.7325 | lr=4.284e-05 | gnorm=7.31 | mem=1.399
+14:46:04 | task2-train-49 | [4000/4500] stage=natural | loss=0.7465 | lr=4.093e-05 | gnorm=3.505 | mem=1.399
+14:46:10 | task2-train-49 | dev@4000: caption_loss=2.236 | grounding_nll_correct=1.092 | grounding_nll_complementary=3.296 | grounding_nll_none=2.278 | grounding_swap_penalty=2.204 | grounding_noimg_penalty=1.186 | grounding_acc_correct=0.6458 | natural_nll_correct=1.192 | natural_nll_complementary=1.732 | natural_nll_none=2.329 | natural_swap_penalty=0.5397 | natural_noimg_penalty=1.137 | natural_acc_correct=0.5328
+14:46:33 | task2-train-49 | [4025/4500] stage=natural | loss=1.079 | lr=3.886e-05 | gnorm=5.885 | mem=1.471
+14:46:54 | task2-train-49 | [4050/4500] stage=natural | loss=1.018 | lr=3.666e-05 | gnorm=17.63 | mem=1.471
+14:47:15 | task2-train-49 | [4075/4500] stage=natural | loss=0.5019 | lr=3.434e-05 | gnorm=4.443 | mem=1.471
+14:47:36 | task2-train-49 | [4100/4500] stage=natural | loss=0.3449 | lr=3.194e-05 | gnorm=5.125 | mem=1.471
+14:47:57 | task2-train-49 | [4125/4500] stage=natural | loss=0.6596 | lr=2.948e-05 | gnorm=4.546 | mem=1.471
+14:48:18 | task2-train-49 | [4150/4500] stage=natural | loss=0.8008 | lr=2.7e-05 | gnorm=10.14 | mem=1.471
+14:48:39 | task2-train-49 | [4175/4500] stage=natural | loss=0.5338 | lr=2.453e-05 | gnorm=3.895 | mem=1.471
+14:49:00 | task2-train-49 | [4200/4500] stage=natural | loss=1.087 | lr=2.209e-05 | gnorm=4.961 | mem=1.471
+14:49:22 | task2-train-49 | [4225/4500] stage=natural | loss=0.5305 | lr=1.972e-05 | gnorm=5.568 | mem=1.471
+14:49:42 | task2-train-49 | [4250/4500] stage=natural | loss=0.3972 | lr=1.744e-05 | gnorm=7.718 | mem=1.471
+14:50:05 | task2-train-49 | [4275/4500] stage=natural | loss=0.6569 | lr=1.529e-05 | gnorm=5.323 | mem=1.471
+14:50:26 | task2-train-49 | [4300/4500] stage=natural | loss=0.6709 | lr=1.328e-05 | gnorm=3.829 | mem=1.471
+14:50:47 | task2-train-49 | [4325/4500] stage=natural | loss=0.922 | lr=1.145e-05 | gnorm=5.295 | mem=1.471
+14:51:08 | task2-train-49 | [4350/4500] stage=natural | loss=0.8404 | lr=9.812e-06 | gnorm=11.16 | mem=1.471
+14:51:29 | task2-train-49 | [4375/4500] stage=natural | loss=0.4813 | lr=8.389e-06 | gnorm=5.065 | mem=1.471
+14:51:50 | task2-train-49 | [4400/4500] stage=natural | loss=0.9556 | lr=7.198e-06 | gnorm=8.649 | mem=1.471
+14:52:10 | task2-train-49 | [4425/4500] stage=natural | loss=0.6427 | lr=6.253e-06 | gnorm=4.779 | mem=1.471
+14:52:32 | task2-train-49 | [4450/4500] stage=natural | loss=1.092 | lr=5.567e-06 | gnorm=4.485 | mem=1.471
+14:52:52 | task2-train-49 | [4475/4500] stage=natural | loss=0.7784 | lr=5.148e-06 | gnorm=6.815 | mem=1.471
+14:53:13 | task2-train-49 | [4500/4500] stage=natural | loss=0.6649 | lr=5e-06 | gnorm=7.374 | mem=1.471
+14:53:18 | task2-train-49 | dev@4500: caption_loss=2.239 | grounding_nll_correct=1.471 | grounding_nll_complementary=3.945 | grounding_nll_none=2.051 | grounding_swap_penalty=2.474 | grounding_noimg_penalty=0.5793 | grounding_acc_correct=0.625 | natural_nll_correct=1.178 | natural_nll_complementary=1.845 | natural_nll_none=2.231 | natural_swap_penalty=0.6667 | natural_noimg_penalty=1.053 | natural_acc_correct=0.5484
+14:53:23 | task2-train-49 | [grounding/correct] acc=0.688 pair=0.531 identical=0.250 empty=0.000 nll=0.871
+14:53:29 | task2-train-49 | [grounding/complementary] acc=0.117 pair=0.016 identical=0.250 empty=0.000 nll=3.736
+14:53:34 | task2-train-49 | [grounding/mismatched] acc=0.289 pair=0.047 identical=0.609 empty=0.000 nll=2.575
+14:53:38 | task2-train-49 | [grounding/none] acc=0.312 pair=0.000 identical=1.000 empty=0.000 nll=1.720
+14:53:46 | task2-train-49 | [natural/correct] acc=0.476 pair=0.208 identical=0.458 empty=0.000 nll=1.627
+14:53:53 | task2-train-49 | [natural/complementary] acc=0.310 pair=0.083 identical=0.458 empty=0.000 nll=2.392
+14:54:00 | task2-train-49 | [natural/mismatched] acc=0.317 pair=0.042 identical=0.479 empty=0.000 nll=2.441
+14:54:06 | task2-train-49 | [natural/none] acc=0.346 pair=0.000 identical=1.000 empty=0.000 nll=2.125

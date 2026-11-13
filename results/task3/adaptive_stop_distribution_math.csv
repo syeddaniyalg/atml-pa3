@@ -1,0 +1,13 @@
+dataset,policy,stop_at,fraction
+math,fixed32,4,0.0
+math,fixed32,8,0.0
+math,fixed32,16,0.0
+math,fixed32,32,1.0
+math,agreement,4,0.663125
+math,agreement,8,0.05825
+math,agreement,16,0.013375
+math,agreement,32,0.26525
+math,quality,4,0.763625
+math,quality,8,0.058125
+math,quality,16,0.0135
+math,quality,32,0.16475

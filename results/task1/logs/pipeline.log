@@ -1,0 +1,5 @@
+15:32:31 | task1 | env: {'torch': '2.11.0+cu130', 'cuda': True, 'gpu': 'Tesla T4', 'gpu_mem_gb': 14.56, 'transformers': '4.57.1', 'lm_eval': '0.4.9.1', 'math_verify': 'unknown', 'datasets': '3.6.0'}
+07:25:20 | task1 | env: {'torch': '2.11.0+cu130', 'cuda': True, 'gpu': 'Tesla T4', 'gpu_mem_gb': 14.56, 'transformers': '4.57.1', 'lm_eval': '0.4.9.1', 'math_verify': 'unknown', 'datasets': '3.6.0'}
+10:56:16 | task1 | diagnostics: 18 rows
+10:56:21 | task1 | oplora constraint check: worst relative leakage 6.04e-04
+10:56:27 | task1 | task1 complete; results in /kaggle/working/atml-pa3/results/task1

@@ -1,0 +1,28 @@
+{
+  "rule": "first questions in the live-subset order whose refinement changed correctness",
+  "wrong_to_correct": [
+    {
+      "qid": "test:3504",
+      "gold": "216",
+      "initial_answer": null,
+      "revised_answer": "216",
+      "revision_excerpt": "Let's re-evaluate the problem step-by-step to ensure all conditions are met and there are no errors.\n\n1. **Factorize 72:**\n   \\[\n   72 = 2^3 \\times 3^2\n   \\]\n\n2. **Determine the general form of the number with 16 factors:**\n   The number of factors of a number \\( n \\) with prime factorization \\( n = p_1^{e_1} \\times p_2^{e_2} \\times \\cdots \\times p_k^{e_k} \\) is given by:\n   \\[\n   (e_1 + 1)(e_2 + 1) \\cdots (e_k + 1)\n   \\]\n   We need this product to equal 16. The possible factorizations of 16 are"
+    },
+    {
+      "qid": "test:196",
+      "gold": "81",
+      "initial_answer": null,
+      "revised_answer": "81",
+      "revision_excerpt": "Let's carefully recount the lattice points within the circle of radius 5 centered at the origin \\((0,0)\\). We will verify each integer \\(x\\) from \\(-5\\) to \\(5\\) and find the corresponding integer \\(y\\) values that satisfy the inequality \\(x^2 + y^2 \\leq 25\\).\n\n1. **For \\(x = 0\\):**\n   \\[\n   0^2 + y^2 \\leq 25 \\implies y^2 \\leq 25 \\implies -5 \\leq y \\leq 5\n   \\]\n   This gives us 11 lattice points: \\((0, -5), (0, -4), (0, -3), (0, -2), (0, -1), (0, 0), (0, 1), (0, 2), (0, 3), (0, 4), (0, 5)\\).\n\n2."
+    }
+  ],
+  "correct_to_wrong": [
+    {
+      "qid": "test:1324",
+      "gold": "\\frac{3}{16}",
+      "initial_answer": "\\frac{3}{16}",
+      "revised_answer": "\\frac{3}{32}",
+      "revision_excerpt": "Let's carefully review the solution to ensure all steps are correct and there are no errors.\n\n### Step-by-Step Analysis\n\n1. **Initial Floor and Final Condition**:\n   - Polya starts on the 6th floor.\n   - She needs to end on the 7th floor or higher, which means the net change in floors must be at least 1. Mathematically, \\(6 + (H - T) \\geq 7\\), simplifying to \\(H - T \\geq 1\\).\n\n2. **Possible Outcomes**:\n   - Each coin flip is independent and fair, so there are \\(2^5 = 32\\) possible outcomes.\n   -"
+    }
+  ]
+}

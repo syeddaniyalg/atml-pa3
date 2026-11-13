@@ -1,0 +1,39 @@
+{
+  "method": "oplora16",
+  "spec": {
+    "kind": "oplora",
+    "r": 16,
+    "alpha": 32,
+    "k": 128,
+    "lr": 0.0002
+  },
+  "trainable_params": 10092544,
+  "total_params": 606142464,
+  "train_seconds": 12412.677429876,
+  "checkpoint_seconds": 1.0664515429962194,
+  "peak_mem_gb": 3.5538792610168457,
+  "recovery_ckpt_bytes": 121530021,
+  "skipped_updates": 0,
+  "final": {
+    "update": 1250,
+    "examples": 40000,
+    "sft_loss": 0.17914359112604075,
+    "lr": 3.3594197175190745e-10,
+    "grad_norm": 0.24117855727672577,
+    "loss_scale": 65536.0,
+    "skipped": false,
+    "tokens": 5082,
+    "step_seconds": 10.220333174998814,
+    "tok_per_s": 497.2440636702228,
+    "mem_gb": 3.5538792610168457
+  },
+  "basis_bytes": 322961408,
+  "preprocess_seconds": 32.54031066199968,
+  "adapter_bytes": 40484335,
+  "export_seconds": 0.11576751200118451,
+  "merge_check": {
+    "max_abs_diff": 0.145751953125,
+    "mean_abs_diff": 0.0069490340538322926,
+    "argmax_agreement": 1.0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "conditions_found": [
+    "baseline",
+    "fullft_mid",
+    "fullft_final",
+    "l2sp_final",
+    "lora4_final",
+    "lora16_final",
+    "oplora16_final"
+  ]
+}

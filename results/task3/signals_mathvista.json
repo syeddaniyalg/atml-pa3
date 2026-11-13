@@ -1,0 +1,82 @@
+[
+  {
+    "dataset": "mathvista",
+    "signal": "length_tokens",
+    "mixed_questions": 640,
+    "spearman_with_correct": -0.04327575352142683,
+    "top_minus_bottom_quartile": -0.0447265625,
+    "quartile_lo": -0.0673876953125,
+    "quartile_hi": -0.020893554687500003,
+    "top1_selection_accuracy_n32": 0.45375
+  },
+  {
+    "dataset": "mathvista",
+    "signal": "mean_logp",
+    "mixed_questions": 640,
+    "spearman_with_correct": 0.03399181541282488,
+    "top_minus_bottom_quartile": 0.024609375,
+    "quartile_lo": 0.0027294921875,
+    "quartile_hi": 0.0455078125,
+    "top1_selection_accuracy_n32": 0.49
+  },
+  {
+    "dataset": "mathvista",
+    "signal": "self_certainty",
+    "mixed_questions": 640,
+    "spearman_with_correct": 0.049748447404534296,
+    "top_minus_bottom_quartile": 0.045703125,
+    "quartile_lo": 0.0244091796875,
+    "quartile_hi": 0.0673876953125,
+    "top1_selection_accuracy_n32": 0.55625
+  },
+  {
+    "dataset": "mathvista",
+    "signal": "vision_engagement",
+    "mixed_questions": 640,
+    "spearman_with_correct": 0.035285076337325985,
+    "top_minus_bottom_quartile": 0.0421875,
+    "quartile_lo": 0.0205078125,
+    "quartile_hi": 0.0662109375,
+    "top1_selection_accuracy_n32": 0.5425
+  },
+  {
+    "dataset": "mathvista",
+    "signal": "visconf",
+    "mixed_questions": 640,
+    "spearman_with_correct": 0.08638755727992271,
+    "top_minus_bottom_quartile": 0.0900390625,
+    "quartile_lo": 0.0673828125,
+    "quartile_hi": 0.1134765625,
+    "top1_selection_accuracy_n32": 0.585
+  },
+  {
+    "dataset": "mathvista",
+    "signal": "visconf_token",
+    "mixed_questions": 640,
+    "spearman_with_correct": 0.07710554611610812,
+    "top_minus_bottom_quartile": 0.0865234375,
+    "quartile_lo": 0.0630810546875,
+    "quartile_hi": 0.10898925781249999,
+    "top1_selection_accuracy_n32": 0.56875
+  },
+  {
+    "dataset": "mathvista",
+    "signal": "calibrated_confidence",
+    "mixed_questions": 640,
+    "spearman_with_correct": 0.05030106404927233,
+    "top_minus_bottom_quartile": 0.04921875,
+    "quartile_lo": 0.0265576171875,
+    "quartile_hi": 0.0705126953125,
+    "top1_selection_accuracy_n32": 0.57
+  },
+  {
+    "dataset": "mathvista",
+    "signal": "shortest (neg. length)",
+    "mixed_questions": 640,
+    "spearman_with_correct": 0.04327575352142683,
+    "top_minus_bottom_quartile": 0.0431640625,
+    "quartile_lo": 0.023041992187500002,
+    "quartile_hi": 0.06524902343749998,
+    "top1_selection_accuracy_n32": 0.53875
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "gsm8k_flexible_em": 0.6474601971190296,
+  "gsm8k_strict_em": 0.0,
+  "gsm8k_extractable_rate": 1.0,
+  "gsm8k_truncated_rate": 0.009855951478392721,
+  "hellaswag_acc": 0.37343158733320053,
+  "hellaswag_acc_norm": 0.46036646086436966,
+  "boolq_acc": 0.5813455657492355,
+  "arc_easy_acc": 0.6666666666666666,
+  "arc_easy_acc_norm": 0.6359427609427609,
+  "n": {
+    "gsm8k": 1319,
+    "hellaswag": 10042,
+    "boolq": 3270,
+    "arc_easy": 2376
+  },
+  "eval_seconds_benchmarks": 2252.9043037580013,
+  "eval_seconds_qualitative": 67.03179592200104
+}

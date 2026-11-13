@@ -1,4 +1,6 @@
 import argparse
+import subprocess
+import sys
 
 from common.launcher import Job, run_jobs
 from common.log import get_logger
@@ -19,6 +21,7 @@ def main():
     ap.add_argument("--tiny", action="store_true")
     ap.add_argument("--resume", action="store_true")
     ap.add_argument("--skip-final", action="store_true")
+    ap.add_argument("--skip-preflight", action="store_true")
     args = ap.parse_args()
     set_child_env()
     cfg = make_cfg(smoke=args.smoke, tiny=args.tiny)
@@ -27,6 +30,11 @@ def main():
     load_train(cfg)
 
     flags = [f for f, on in (("--smoke", args.smoke), ("--tiny", args.tiny), ("--resume", args.resume)) if on]
+    if not args.skip_preflight:
+        log.info("running preflight (memory stress and a tiny evaluation) before any training")
+        code = subprocess.run([sys.executable, "-m", "task1.preflight", *[f for f in flags if f != "--resume"]]).returncode
+        if code != 0:
+            raise SystemExit("preflight failed, nothing was started; see results/task1/logs/preflight.log")
     jobs = [
         Job(m, ["-m", "task1.run", "--method", m, *flags], done=str(OUT / "runs" / m / "done.json"))
         for m in ORDER

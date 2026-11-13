@@ -1,0 +1,9 @@
+dataset,policy,early_stop_rate,incorrect_early_stop_rate,precision_of_early_stops,incorrect_early_but_fixed32_correct,incorrect_early_and_fixed32_incorrect,pool_correct_fraction_bin,questions,accuracy,mean_rollouts,fixed32_accuracy
+mathvista,agreement,0.863375,0.25875,0.7003040393803388,0.040875,0.217875,,,,,
+mathvista,agreement,,,,,,"[0.00,0.34)",273.0,0.1054945054945055,14.102564102564102,0.05860805860805861
+mathvista,agreement,,,,,,"[0.34,0.67)",173.0,0.7127167630057804,7.815028901734104,0.8173410404624277
+mathvista,agreement,,,,,,"[0.67,1.00)",354.0,0.9946327683615819,4.2677966101694915,1.0
+mathvista,quality,0.828875,0.231375,0.7208565827175388,0.032625,0.19875,,,,,
+mathvista,quality,,,,,,"[0.00,0.34)",273.0,0.0989010989010989,16.266666666666666,0.05860805860805861
+mathvista,quality,,,,,,"[0.34,0.67)",173.0,0.7369942196531792,9.50057803468208,0.8173410404624277
+mathvista,quality,,,,,,"[0.67,1.00)",354.0,0.9963276836158192,4.435028248587571,1.0

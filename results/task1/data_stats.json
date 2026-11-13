@@ -1,0 +1,9 @@
+{
+  "empty": 0,
+  "too_long": 2,
+  "gsm8k_overlap": 0,
+  "scanned": 40002,
+  "kept": 40000,
+  "mean_len": 247.693475,
+  "max_len": 1941
+}

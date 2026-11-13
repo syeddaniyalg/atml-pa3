@@ -1,0 +1,8 @@
+condition,truncated,mean_tokens,math_markers,mean_rep
+Baseline,0,44.667,0,0.005
+Full FT (mid),3,277.167,101,0.32
+Full FT,1,136.667,5,0.196
+Full FT + L2-SP,1,138.0,3,0.191
+LoRA-4,0,51.5,0,0.052
+LoRA-16,0,58.0,0,0.004
+OPLoRA-16,0,85.0,1,0.102

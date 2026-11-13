@@ -1,0 +1,35 @@
+{
+  "rule": "first held-out questions (permuted order) with a quality-aware early stop that is incorrect while fixed-32 self-consistency is correct",
+  "cases": [
+    {
+      "qid": "test:3504",
+      "order": 7,
+      "stopped_at": 4,
+      "pool_correct_fraction": 0.40625
+    },
+    {
+      "qid": "test:2460",
+      "order": 7,
+      "stopped_at": 4,
+      "pool_correct_fraction": 0.34375
+    },
+    {
+      "qid": "test:534",
+      "order": 2,
+      "stopped_at": 4,
+      "pool_correct_fraction": 0.71875
+    },
+    {
+      "qid": "test:3572",
+      "order": 8,
+      "stopped_at": 4,
+      "pool_correct_fraction": 0.4375
+    },
+    {
+      "qid": "test:1903",
+      "order": 4,
+      "stopped_at": 4,
+      "pool_correct_fraction": 0.21875
+    }
+  ]
+}

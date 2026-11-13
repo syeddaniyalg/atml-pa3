@@ -1,0 +1,7 @@
+| comparison | a | b | GSM8K (a-b) pp | HellaSwag (a-b) pp | BoolQ (a-b) pp | ARC-E (a-b) pp | GSM8K strict (a-b) pp | GSM8K extractable (a-b) pp | GSM8K truncated (a-b) pp |
+|---|---|---|---|---|---|---|---|---|---|
+| rank | LoRA-16 | LoRA-4 | 2.96 | -0.07 | 0.83 | 0.04 | 0.0 | 0.0 | -0.15 |
+| explicit regularization | Full FT + L2-SP | Full FT | -1.06 | 0.33 | 8.81 | -0.17 | 0.0 | 0.0 | -0.45 |
+| orthogonal protection | OPLoRA-16 | LoRA-16 | 0.53 | 0.05 | 0.09 | -0.04 | 0.0 | 0.0 | -0.08 |
+| full vs low-rank | LoRA-16 | Full FT | -2.96 | 1.24 | 12.72 | -0.84 | 0.0 | 0.0 | 0.0 |
+| full FT progression | Full FT | Full FT (mid) | 7.73 | 0.48 | -0.92 | 1.52 | 0.0 | 0.0 | 0.45 |

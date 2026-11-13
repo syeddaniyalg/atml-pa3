@@ -1,0 +1,34 @@
+{
+  "method": "fullft",
+  "spec": {
+    "kind": "full",
+    "lr": 2e-05,
+    "lam": 0.0
+  },
+  "trainable_params": 596049920,
+  "total_params": 596049920,
+  "train_seconds": 8530.700287403,
+  "checkpoint_seconds": 119.86163456199984,
+  "peak_mem_gb": 11.686286449432373,
+  "recovery_ckpt_bytes": 7152985977,
+  "skipped_updates": 0,
+  "final": {
+    "update": 1250,
+    "examples": 40000,
+    "sft_loss": 0.1651684101619668,
+    "lr": 3.3594197175190743e-11,
+    "grad_norm": 1.615697979927063,
+    "loss_scale": 65536.0,
+    "skipped": false,
+    "tokens": 5082,
+    "step_seconds": 6.274538476000089,
+    "tok_per_s": 809.9400488878168,
+    "mem_gb": 11.686286449432373
+  },
+  "reference_bytes": 2384199680,
+  "reference_build_seconds": 4.660957929999995,
+  "displacement_mid": 10.006249150416162,
+  "displacement_final": 10.642056657716179,
+  "penalty_seconds": 0.0,
+  "weights_bytes": 2384328551
+}

@@ -1,0 +1,51 @@
+{
+  "stages": {
+    "caption": {
+      "updates": 2250,
+      "seconds_excluding_dev_and_ckpt": 1303.5891927950001,
+      "peak_mem_gb": 1.493016242980957,
+      "trainable": {
+        "connector": 1837056,
+        "lora": 0
+      },
+      "draw_counts": {
+        "caption": 36000
+      },
+      "weights_bytes": 7351142
+    },
+    "vit": {
+      "updates": 1500,
+      "seconds_excluding_dev_and_ckpt": 1275.1843608980003,
+      "peak_mem_gb": 1.4710159301757812,
+      "trainable": {
+        "connector": 1837056,
+        "lora": 4587520
+      },
+      "draw_counts": {
+        "presence": 6093,
+        "counting": 2961,
+        "caption": 2946
+      },
+      "weights_bytes": 25773090
+    },
+    "natural": {
+      "updates": 750,
+      "seconds_excluding_dev_and_ckpt": 639.0337353780005,
+      "peak_mem_gb": 1.4716253280639648,
+      "trainable": {
+        "connector": 1837056,
+        "lora": 4587520
+      },
+      "draw_counts": {
+        "natural": 4167,
+        "presence": 586,
+        "counting": 642,
+        "caption": 605
+      },
+      "weights_bytes": 25773090
+    }
+  },
+  "checkpoint_seconds": 4.695696888999464,
+  "recovery_ckpt_bytes": 77388430,
+  "total_train_seconds": 3217.807289071001
+}

@@ -1,0 +1,13 @@
+suite,contrast,value
+grounding,accuracy_correct_minus_complementary,"0.555 [0.414, 0.695]"
+grounding,nll_complementary_minus_correct,"3.027 [2.371, 3.688]"
+grounding,accuracy_correct_minus_mismatched,"0.359 [0.273, 0.445]"
+grounding,nll_mismatched_minus_correct,"1.736 [1.318, 2.148]"
+grounding,accuracy_correct_minus_none,"0.383 [0.312, 0.453]"
+grounding,nll_none_minus_correct,"1.192 [0.900, 1.481]"
+natural,accuracy_correct_minus_complementary,"0.240 [0.153, 0.329]"
+natural,nll_complementary_minus_correct,"1.015 [0.675, 1.407]"
+natural,accuracy_correct_minus_mismatched,"0.215 [0.135, 0.297]"
+natural,nll_mismatched_minus_correct,"0.821 [0.490, 1.152]"
+natural,accuracy_correct_minus_none,"0.235 [0.157, 0.315]"
+natural,nll_none_minus_correct,"1.037 [0.705, 1.386]"

@@ -1,0 +1,42 @@
+{
+  "sizes": {
+    "caption_dev": 96,
+    "presence_dev": 24,
+    "presence_test": 64,
+    "counting_dev": 24,
+    "counting_test": 64,
+    "natural_dev": 64,
+    "natural_test": 192
+  },
+  "train_images": 8755,
+  "overlaps": {
+    "caption_dev&presence_dev": 0,
+    "caption_dev&presence_test": 0,
+    "caption_dev&counting_dev": 0,
+    "caption_dev&counting_test": 0,
+    "caption_dev&natural_dev": 0,
+    "caption_dev&natural_test": 0,
+    "caption_dev&train": 0,
+    "presence_dev&presence_test": 0,
+    "presence_dev&counting_dev": 0,
+    "presence_dev&counting_test": 0,
+    "presence_dev&natural_dev": 0,
+    "presence_dev&natural_test": 0,
+    "presence_dev&train": 0,
+    "presence_test&counting_dev": 0,
+    "presence_test&counting_test": 0,
+    "presence_test&natural_dev": 0,
+    "presence_test&natural_test": 0,
+    "presence_test&train": 0,
+    "counting_dev&counting_test": 0,
+    "counting_dev&natural_dev": 0,
+    "counting_dev&natural_test": 0,
+    "counting_dev&train": 0,
+    "counting_test&natural_dev": 0,
+    "counting_test&natural_test": 0,
+    "counting_test&train": 0,
+    "natural_dev&natural_test": 0,
+    "natural_dev&train": 0,
+    "natural_test&train": 0
+  }
+}

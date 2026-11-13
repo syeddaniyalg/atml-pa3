@@ -1,0 +1,27 @@
+{
+  "rule": "per suite and bucket, the first pairs in sorted pair-id order; image_driven: both correct-image answers match references and both swapped-image answers equal the partner's reference; ignores_image: both correct and swapped predictions identical; wrong_with_correct_image: at least one incorrect answer with the original image",
+  "picks": {
+    "grounding": {
+      "image_driven": [
+        "counting_test_0",
+        "counting_test_10"
+      ],
+      "ignores_image": [],
+      "wrong_with_correct_image": [
+        "counting_test_1",
+        "counting_test_11"
+      ]
+    },
+    "natural": {
+      "image_driven": [
+        "natural_137578000_388027001",
+        "natural_205514002_436273003"
+      ],
+      "ignores_image": [],
+      "wrong_with_correct_image": [
+        "natural_105951017_567340008",
+        "natural_108853002_262360000"
+      ]
+    }
+  }
+}

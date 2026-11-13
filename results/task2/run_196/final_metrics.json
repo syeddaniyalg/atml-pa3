@@ -1,0 +1,557 @@
+{
+  "metrics": {
+    "grounding": {
+      "correct": {
+        "accuracy": {
+          "value": 0.7109375,
+          "lo": 0.625,
+          "hi": 0.796875
+        },
+        "pair_accuracy": {
+          "value": 0.5625,
+          "lo": 0.4375,
+          "hi": 0.671875
+        },
+        "identical_answer_rate": {
+          "value": 0.21875,
+          "lo": 0.125,
+          "hi": 0.328125
+        },
+        "empty_rate": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "follows_partner_rate": {
+          "value": 0.15625,
+          "lo": 0.09375,
+          "hi": 0.21875
+        },
+        "answer_nll": {
+          "value": 0.8488396081935861,
+          "lo": 0.5893179510514404,
+          "hi": 1.1483972043343142
+        },
+        "accuracy_presence": {
+          "value": 0.9375,
+          "lo": 0.875,
+          "hi": 0.984375
+        },
+        "pair_accuracy_presence": {
+          "value": 0.875,
+          "lo": 0.75,
+          "hi": 0.96875
+        },
+        "accuracy_counting": {
+          "value": 0.484375,
+          "lo": 0.359375,
+          "hi": 0.609375
+        },
+        "pair_accuracy_counting": {
+          "value": 0.25,
+          "lo": 0.125,
+          "hi": 0.40625
+        },
+        "generation_seconds_per_answer": 0.03837436494531232,
+        "n_pairs": 64,
+        "n_questions": 128
+      },
+      "complementary": {
+        "accuracy": {
+          "value": 0.15625,
+          "lo": 0.09375,
+          "hi": 0.21875
+        },
+        "pair_accuracy": {
+          "value": 0.03125,
+          "lo": 0.0,
+          "hi": 0.078125
+        },
+        "identical_answer_rate": {
+          "value": 0.21875,
+          "lo": 0.125,
+          "hi": 0.328125
+        },
+        "empty_rate": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "follows_partner_rate": {
+          "value": 0.7109375,
+          "lo": 0.625,
+          "hi": 0.796875
+        },
+        "answer_nll": {
+          "value": 3.876061291230144,
+          "lo": 3.3432335732322827,
+          "hi": 4.429810983732387
+        },
+        "accuracy_presence": {
+          "value": 0.0625,
+          "lo": 0.015625,
+          "hi": 0.125
+        },
+        "pair_accuracy_presence": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "accuracy_counting": {
+          "value": 0.25,
+          "lo": 0.15625,
+          "hi": 0.359375
+        },
+        "pair_accuracy_counting": {
+          "value": 0.0625,
+          "lo": 0.0,
+          "hi": 0.15625
+        },
+        "generation_seconds_per_answer": 0.03951010764062346,
+        "n_pairs": 64,
+        "n_questions": 128
+      },
+      "mismatched": {
+        "accuracy": {
+          "value": 0.3515625,
+          "lo": 0.28125,
+          "hi": 0.421875
+        },
+        "pair_accuracy": {
+          "value": 0.0625,
+          "lo": 0.015625,
+          "hi": 0.125
+        },
+        "identical_answer_rate": {
+          "value": 0.59375,
+          "lo": 0.46875,
+          "hi": 0.71875
+        },
+        "empty_rate": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "follows_partner_rate": {
+          "value": 0.390625,
+          "lo": 0.3203125,
+          "hi": 0.4609375
+        },
+        "answer_nll": {
+          "value": 2.5848744881797074,
+          "lo": 2.2466524543591704,
+          "hi": 2.9543078018407103
+        },
+        "accuracy_presence": {
+          "value": 0.484375,
+          "lo": 0.40625,
+          "hi": 0.5625
+        },
+        "pair_accuracy_presence": {
+          "value": 0.09375,
+          "lo": 0.0,
+          "hi": 0.1875
+        },
+        "accuracy_counting": {
+          "value": 0.21875,
+          "lo": 0.125,
+          "hi": 0.3125
+        },
+        "pair_accuracy_counting": {
+          "value": 0.03125,
+          "lo": 0.0,
+          "hi": 0.09375
+        },
+        "generation_seconds_per_answer": 0.035347963164063856,
+        "n_pairs": 64,
+        "n_questions": 128
+      },
+      "none": {
+        "accuracy": {
+          "value": 0.328125,
+          "lo": 0.2734375,
+          "hi": 0.3828125
+        },
+        "pair_accuracy": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "identical_answer_rate": {
+          "value": 1.0,
+          "lo": 1.0,
+          "hi": 1.0
+        },
+        "empty_rate": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "follows_partner_rate": {
+          "value": 0.328125,
+          "lo": 0.2734375,
+          "hi": 0.3828125
+        },
+        "answer_nll": {
+          "value": 2.0406001126539195,
+          "lo": 1.7972466008392076,
+          "hi": 2.3013531245684136
+        },
+        "accuracy_presence": {
+          "value": 0.5,
+          "lo": 0.5,
+          "hi": 0.5
+        },
+        "pair_accuracy_presence": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "accuracy_counting": {
+          "value": 0.15625,
+          "lo": 0.078125,
+          "hi": 0.234375
+        },
+        "pair_accuracy_counting": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "generation_seconds_per_answer": 0.027805276859375283,
+        "n_pairs": 64,
+        "n_questions": 128
+      }
+    },
+    "natural": {
+      "correct": {
+        "accuracy": {
+          "value": 0.5416666666666666,
+          "lo": 0.4807161458333334,
+          "hi": 0.603125
+        },
+        "pair_accuracy": {
+          "value": 0.19791666666666666,
+          "lo": 0.125,
+          "hi": 0.28125
+        },
+        "identical_answer_rate": {
+          "value": 0.5625,
+          "lo": 0.4583333333333333,
+          "hi": 0.65625
+        },
+        "empty_rate": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "follows_partner_rate": {
+          "value": 0.2708333333333333,
+          "lo": 0.21354166666666666,
+          "hi": 0.328125
+        },
+        "answer_nll": {
+          "value": 1.4245917497234284,
+          "lo": 1.1761400949811407,
+          "hi": 1.6947358585535164
+        },
+        "accuracy_yes/no": {
+          "value": 0.5916666666666666,
+          "lo": 0.5166319444444444,
+          "hi": 0.6680555555555556
+        },
+        "pair_accuracy_yes/no": {
+          "value": 0.16666666666666666,
+          "lo": 0.05555555555555555,
+          "hi": 0.3055555555555556
+        },
+        "accuracy_number": {
+          "value": 0.6229166666666667,
+          "lo": 0.49791666666666673,
+          "hi": 0.7479166666666667
+        },
+        "pair_accuracy_number": {
+          "value": 0.3333333333333333,
+          "lo": 0.16666666666666666,
+          "hi": 0.5416666666666666
+        },
+        "accuracy_other": {
+          "value": 0.4375,
+          "lo": 0.33194444444444443,
+          "hi": 0.5472222222222222
+        },
+        "pair_accuracy_other": {
+          "value": 0.1388888888888889,
+          "lo": 0.027777777777777776,
+          "hi": 0.25
+        },
+        "generation_seconds_per_answer": 0.04376329863541647,
+        "n_pairs": 96,
+        "n_questions": 192
+      },
+      "complementary": {
+        "accuracy": {
+          "value": 0.3020833333333333,
+          "lo": 0.24321614583333337,
+          "hi": 0.36147135416666676
+        },
+        "pair_accuracy": {
+          "value": 0.03125,
+          "lo": 0.0,
+          "hi": 0.07291666666666667
+        },
+        "identical_answer_rate": {
+          "value": 0.5625,
+          "lo": 0.4583333333333333,
+          "hi": 0.65625
+        },
+        "empty_rate": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "follows_partner_rate": {
+          "value": 0.5104166666666666,
+          "lo": 0.4479166666666667,
+          "hi": 0.5729166666666666
+        },
+        "answer_nll": {
+          "value": 2.439167598960921,
+          "lo": 2.053334232888786,
+          "hi": 2.845628063134306
+        },
+        "accuracy_yes/no": {
+          "value": 0.5083333333333333,
+          "lo": 0.4263541666666666,
+          "hi": 0.5902777777777777
+        },
+        "pair_accuracy_yes/no": {
+          "value": 0.08333333333333333,
+          "lo": 0.0,
+          "hi": 0.19444444444444445
+        },
+        "accuracy_number": {
+          "value": 0.12291666666666667,
+          "lo": 0.04583333333333334,
+          "hi": 0.2125
+        },
+        "pair_accuracy_number": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "accuracy_other": {
+          "value": 0.2152777777777778,
+          "lo": 0.13333333333333333,
+          "hi": 0.30000000000000004
+        },
+        "pair_accuracy_other": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "generation_seconds_per_answer": 0.040590109864581336,
+        "n_pairs": 96,
+        "n_questions": 192
+      },
+      "mismatched": {
+        "accuracy": {
+          "value": 0.32708333333333334,
+          "lo": 0.27187500000000003,
+          "hi": 0.3848958333333334
+        },
+        "pair_accuracy": {
+          "value": 0.041666666666666664,
+          "lo": 0.010416666666666666,
+          "hi": 0.08333333333333333
+        },
+        "identical_answer_rate": {
+          "value": 0.4895833333333333,
+          "lo": 0.3958333333333333,
+          "hi": 0.5833333333333334
+        },
+        "empty_rate": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "follows_partner_rate": {
+          "value": 0.328125,
+          "lo": 0.2708333333333333,
+          "hi": 0.390625
+        },
+        "answer_nll": {
+          "value": 2.245400261070851,
+          "lo": 1.918962524884167,
+          "hi": 2.5830515417554123
+        },
+        "accuracy_yes/no": {
+          "value": 0.498611111111111,
+          "lo": 0.4319444444444445,
+          "hi": 0.5638888888888889
+        },
+        "pair_accuracy_yes/no": {
+          "value": 0.05555555555555555,
+          "lo": 0.0,
+          "hi": 0.1388888888888889
+        },
+        "accuracy_number": {
+          "value": 0.31875000000000003,
+          "lo": 0.19375,
+          "hi": 0.44375000000000003
+        },
+        "pair_accuracy_number": {
+          "value": 0.08333333333333333,
+          "lo": 0.0,
+          "hi": 0.20833333333333334
+        },
+        "accuracy_other": {
+          "value": 0.1611111111111111,
+          "lo": 0.08611111111111111,
+          "hi": 0.2361111111111111
+        },
+        "pair_accuracy_other": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "generation_seconds_per_answer": 0.04154168160416797,
+        "n_pairs": 96,
+        "n_questions": 192
+      },
+      "none": {
+        "accuracy": {
+          "value": 0.30624999999999997,
+          "lo": 0.2520833333333334,
+          "hi": 0.359375
+        },
+        "pair_accuracy": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "identical_answer_rate": {
+          "value": 1.0,
+          "lo": 1.0,
+          "hi": 1.0
+        },
+        "empty_rate": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "follows_partner_rate": {
+          "value": 0.28125,
+          "lo": 0.234375,
+          "hi": 0.328125
+        },
+        "answer_nll": {
+          "value": 2.461404568515718,
+          "lo": 2.1243678632852,
+          "hi": 2.8181047299052198
+        },
+        "accuracy_yes/no": {
+          "value": 0.4861111111111111,
+          "lo": 0.4222222222222222,
+          "hi": 0.5444444444444445
+        },
+        "pair_accuracy_yes/no": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "accuracy_number": {
+          "value": 0.24166666666666667,
+          "lo": 0.13749999999999998,
+          "hi": 0.34375
+        },
+        "pair_accuracy_number": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "accuracy_other": {
+          "value": 0.16944444444444443,
+          "lo": 0.0875,
+          "hi": 0.2611111111111111
+        },
+        "pair_accuracy_other": {
+          "value": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "generation_seconds_per_answer": 0.025938760942707972,
+        "n_pairs": 96,
+        "n_questions": 192
+      }
+    }
+  },
+  "advantages": {
+    "grounding": {
+      "accuracy_correct_minus_complementary": {
+        "value": 0.5546875,
+        "lo": 0.4140625,
+        "hi": 0.6953125
+      },
+      "nll_complementary_minus_correct": {
+        "value": 3.027221683036558,
+        "lo": 2.3707122892931873,
+        "hi": 3.6875366263046585
+      },
+      "accuracy_correct_minus_mismatched": {
+        "value": 0.359375,
+        "lo": 0.2734375,
+        "hi": 0.4453125
+      },
+      "nll_mismatched_minus_correct": {
+        "value": 1.7360348799861214,
+        "lo": 1.317963368064327,
+        "hi": 2.1476001469418993
+      },
+      "accuracy_correct_minus_none": {
+        "value": 0.3828125,
+        "lo": 0.3125,
+        "hi": 0.453125
+      },
+      "nll_none_minus_correct": {
+        "value": 1.1917605044603334,
+        "lo": 0.8995480742072044,
+        "hi": 1.4813397791680842
+      }
+    },
+    "natural": {
+      "accuracy_correct_minus_complementary": {
+        "value": 0.23958333333333334,
+        "lo": 0.15260416666666665,
+        "hi": 0.32917968750000004
+      },
+      "nll_complementary_minus_correct": {
+        "value": 1.0145758492374928,
+        "lo": 0.6749486023957919,
+        "hi": 1.4070981688704403
+      },
+      "accuracy_correct_minus_mismatched": {
+        "value": 0.21458333333333335,
+        "lo": 0.13541666666666666,
+        "hi": 0.296875
+      },
+      "nll_mismatched_minus_correct": {
+        "value": 0.8208085113474226,
+        "lo": 0.49029043505579467,
+        "hi": 1.15157151441875
+      },
+      "accuracy_correct_minus_none": {
+        "value": 0.2354166666666667,
+        "lo": 0.15677083333333333,
+        "hi": 0.31510416666666663
+      },
+      "nll_none_minus_correct": {
+        "value": 1.0368128187922896,
+        "lo": 0.7045619612589387,
+        "hi": 1.386145157620922
+      }
+    }
+  },
+  "eval_seconds": 73.43993653500002,
+  "eval_peak_mem_gb": 1.898773193359375,
+  "tokens": 196
+}

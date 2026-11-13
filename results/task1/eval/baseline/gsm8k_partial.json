@@ -1,0 +1,9 @@
+{
+  "scores": {
+    "gsm8k_flexible_em": 0.4359363153904473,
+    "gsm8k_strict_em": 0.0,
+    "gsm8k_extractable_rate": 1.0,
+    "gsm8k_truncated_rate": 0.008339651250947688
+  },
+  "n": 1319
+}

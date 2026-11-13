@@ -1,0 +1,10 @@
+22:38:37 | baseline | env: {'torch': '2.11.0+cu130', 'cuda': True, 'gpu': 'Tesla T4', 'gpu_mem_gb': 14.56, 'transformers': '4.57.1', 'lm_eval': '0.4.9.1', 'math_verify': 'unknown', 'datasets': '3.6.0'}
+22:38:40 | baseline | [baseline] gsm8k_cot (generation)
+23:15:19 | baseline | [baseline] gsm8k flexible=0.4359 strict=0.0000
+23:15:19 | baseline | [baseline] hellaswag / boolq / arc_easy (likelihood)
+10:43:23 | baseline | env: {'torch': '2.11.0+cu130', 'cuda': True, 'gpu': 'Tesla T4', 'gpu_mem_gb': 14.56, 'transformers': '4.57.1', 'lm_eval': '0.4.9.1', 'math_verify': 'unknown', 'datasets': '3.6.0'}
+10:43:27 | baseline | [baseline] rebuilt gsm8k scores from saved samples: {'gsm8k_flexible_em': 0.4359363153904473, 'gsm8k_strict_em': 0.0, 'gsm8k_extractable_rate': 1.0, 'gsm8k_truncated_rate': 0.008339651250947688}
+10:43:27 | baseline | [baseline] gsm8k reused from earlier run: flexible=0.4359
+10:43:27 | baseline | [baseline] hellaswag / boolq / arc_easy (likelihood)
+10:55:03 | baseline | [baseline] scores: {'gsm8k_flexible_em': 0.4359, 'gsm8k_strict_em': 0.0, 'gsm8k_extractable_rate': 1.0, 'gsm8k_truncated_rate': 0.0083, 'hellaswag_acc': 0.3756, 'hellaswag_acc_norm': 0.4732, 'boolq_acc': 0.6437, 'arc_easy_acc': 0.609, 'arc_easy_acc_norm': 0.5606, 'eval_seconds_benchmarks': 697.0176}
+10:55:41 | baseline | qualitative: 24 responses, 1 truncated

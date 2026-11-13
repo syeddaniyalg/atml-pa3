@@ -1,0 +1,10 @@
+{
+  "rows": 32000,
+  "questions": 1000,
+  "tokens_total": 20742094,
+  "alignment": "logp/kl/token-id lengths equal for all rollouts",
+  "accuracy_first_rollout": 0.654,
+  "accuracy_all_rollouts": 0.6646875,
+  "no_answer_rate": 0.01628125,
+  "capped_rate": 0.01634375
+}

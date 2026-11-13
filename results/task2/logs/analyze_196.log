@@ -1,0 +1,1 @@
+14:54:26 | task2-analyze-196 | env: {'torch': '2.14.1+cu130', 'cuda': True, 'gpu': 'Tesla T4', 'gpu_mem_gb': 14.56, 'transformers': '4.57.1', 'lm_eval': '0.4.9.1', 'math_verify': 'unknown', 'datasets': '3.6.0'}

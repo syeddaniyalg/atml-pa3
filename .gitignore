@@ -1,9 +1,27 @@
+# python / notebooks
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# local caches, raw datasets and recovery checkpoints (rebuilt by the code)
 cache/
 ckpt/
 *.part
+*.progress
+**/recovery/
 
-*.parquet
-results/**/*.npy
-.ipynb_checkpoints/
+# large binary artifacts (weights, adapters, weight deltas, feature caches).
+# Everything derived from them (tables, figures, diagnostics.json, metrics) stays tracked.
+results/**/*.pt
+results/**/*.pth
+results/**/*.safetensors
+results/**/*.bin
+results/**/feats*.npy
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
