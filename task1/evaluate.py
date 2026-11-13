@@ -1,3 +1,4 @@
+import json
 import time
 
 import lm_eval
@@ -83,6 +84,18 @@ def evaluate_condition(model, tok, cfg, cond, log):
     scores = {}
 
     partial = out / "gsm8k_partial.json"
+    old_samples = out / "gsm8k_samples.jsonl"
+    if not partial.exists() and old_samples.exists():
+        old = [json.loads(x) for x in open(old_samples, encoding="utf-8") if x.strip()]
+        if old and len(old) == (cfg.eval_limit or 1319):
+            rebuilt = {
+                "gsm8k_flexible_em": sum(r["correct_flexible"] for r in old) / len(old),
+                "gsm8k_strict_em": sum(r["correct_strict"] for r in old) / len(old),
+                "gsm8k_extractable_rate": sum(r["extracted"] for r in old) / len(old),
+                "gsm8k_truncated_rate": sum(r["truncated"] for r in old) / len(old),
+            }
+            save_json({"scores": rebuilt, "n": len(old)}, partial)
+            log.info("[%s] rebuilt gsm8k scores from saved samples: %s", cond, rebuilt)
     if partial.exists() and (out / "gsm8k_samples.jsonl").exists():
         saved = load_json(partial)
         scores.update(saved["scores"])

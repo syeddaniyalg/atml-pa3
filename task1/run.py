@@ -55,8 +55,19 @@ def export_adapter(method, model, cfg, tok, device, log):
 def run_method(method, cfg, resume, log):
     tok = load_tokenizer()
     device = get_device()
-    model, result = train(method, cfg, log, resume)
     spec = METHODS[method]
+    run_dir = OUT / "runs" / method
+    if spec["kind"] != "full" and (run_dir / "adapter.pt").exists() and (run_dir / "train_summary.json").exists():
+        log.info("adapter and training summary found, skipping training for %s", method)
+        final = load_base(cfg, torch.float16, device)
+        merge_factors(final, torch.load(run_dir / "adapter.pt", map_location=device))
+        final.eval()
+        evaluate_condition(final, tok, cfg, f"{method}_final", log)
+        del final
+        free_cuda()
+        save_json({"done": True}, run_dir / "done.json")
+        return
+    model, result = train(method, cfg, log, resume)
     if spec["kind"] == "full":
         model.eval()
         model.gradient_checkpointing_disable()
